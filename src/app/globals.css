@@ -4,30 +4,30 @@
   --bg-color: #f8fafc;
   --text-primary: #0f172a;
   --text-secondary: #475569;
-  --accent-1: #0ea5e9;
-  --accent-2: #6366f1;
-  --accent-3: #a855f7;
-  --glass-bg: rgba(255, 255, 255, 0.65);
-  --glass-border: rgba(15, 23, 42, 0.08);
-  --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
-  --hover-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.15);
-  --glow-color: rgba(99, 102, 241, 0.1);
+  --accent-1: #0284c7;
+  --accent-2: #4f46e5;
+  --accent-3: #7c3aed;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(15, 23, 42, 0.06);
+  --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.02);
+  --hover-shadow: 0 20px 40px -15px rgba(79, 70, 229, 0.15);
+  --glow-color: rgba(79, 70, 229, 0.08);
   --border-radius-lg: 1.5rem;
   --border-radius-md: 1rem;
 }
 
 .dark {
-  --bg-color: #030712;
+  --bg-color: #080c14;
   --text-primary: #f9fafb;
   --text-secondary: #9ca3af;
   --accent-1: #38bdf8;
-  --accent-2: #818cf8;
-  --accent-3: #c084fc;
-  --glass-bg: rgba(17, 24, 39, 0.5);
-  --glass-border: rgba(255, 255, 255, 0.05);
-  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-  --hover-shadow: 0 20px 40px -15px rgba(56, 189, 248, 0.25);
-  --glow-color: rgba(56, 189, 248, 0.15);
+  --accent-2: #6366f1;
+  --accent-3: #a855f7;
+  --glass-bg: rgba(13, 20, 35, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --card-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+  --hover-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.22);
+  --glow-color: rgba(56, 189, 248, 0.12);
   --border-radius-lg: 1.5rem;
   --border-radius-md: 1rem;
 }
@@ -51,14 +51,36 @@
   display: block;
 }
 
-html, body {
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+/* Sleek Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border: 3px solid var(--bg-color);
+  border-radius: 999px;
+  transition: background 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-2);
 }
 
 /* Background blob */
