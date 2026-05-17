@@ -207,7 +207,7 @@ export default function Home() {
 
       <footer className="footer">
         <div className="container">
-          <p>© {new Date().getFullYear()} {personal.name}. Built with Next.js.</p>
+          <p>© {new Date().getFullYear()} {personal.name}.</p>
         </div>
       </footer>
     </>
