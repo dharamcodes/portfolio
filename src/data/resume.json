@@ -1,0 +1,258 @@
+{
+  "personal": {
+    "name": "Dharmendra Awasthi",
+    "role": "Tech Lead",
+    "summary": "Senior Software Engineer with 9+ years of experience building large-scale distributed systems and cloud-native microservices in telecom, retail, fintech, and gaming. Specializing in Java, Spring Boot, Kafka, and AWS. Designed high-throughput platforms handling 1,500+ TPS and 10M+ users, led end-to-end system design (HLD/LLD), and managed engineering teams of up to 4.",
+    "profileImage": "/profile.png"
+  },
+  "contact": {
+    "location": "Bengaluru, Karnataka, India",
+    "phone": "+91-9454318045",
+    "email": "er.dharamk@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/dharamcodes",
+    "github": "https://github.com/dharamcodes"
+  },
+  "skills": {
+    "Languages & Frameworks": [
+      "Java",
+      "Python",
+      "SQL",
+      "Bash",
+      "Spring Boot",
+      "Spring Cloud",
+      "Hibernate",
+      "JUnit",
+      "Mockito"
+    ],
+    "Architecture & Design": [
+      "Microservices",
+      "Event-Driven Architecture",
+      "CQRS",
+      "Saga Pattern",
+      "Circuit Breaker",
+      "Domain-Driven Design"
+    ],
+    "Cloud & Infrastructure": [
+      "AWS (EC2, S3, SQS, Lambda, ECS, CloudWatch)",
+      "Kafka",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Elasticsearch"
+    ],
+    "DevOps & Tools": [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "Git",
+      "GitHub",
+      "Gradle",
+      "Maven",
+      "Terraform",
+      "REST APIs",
+      "gRPC",
+      "OAuth2",
+      "JWT"
+    ],
+    "Observability": [
+      "Zipkin",
+      "Prometheus",
+      "Grafana",
+      "ELK Stack",
+      "Splunk",
+      "Distributed Tracing"
+    ],
+    "Practices": [
+      "System Design (HLD/LLD)",
+      "Performance Tuning",
+      "Capacity Planning",
+      "CI/CD",
+      "Agile/Scrum",
+      "TDD"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Luxoft (Client: Tesco)",
+      "location": "Bengaluru, Karnataka, India",
+      "duration": "Jul 2024 – Present",
+      "bullets": [
+        "Designed and built an Orchestrator System using Spring Boot microservices, sustaining 1,500+ TPS at 99.9% uptime.",
+        "Engineered Leader-Worker processing via Kafka pipelines, enabling 1M+ messages/day ingestion with zero data loss.",
+        "Owned end-to-end HLD/LLD for 8+ features, incorporating failure-mode analysis and CI/CD quality gates.",
+        "Integrated Generative AI (LLMs) into content verification, reducing manual review effort by 30%.",
+        "Mentored 3 engineers on system design and Kafka patterns, accelerating project ramp-up by 40%.",
+        "Drove technical strategy and quarterly release planning with 3+ business units, aligning engineering with product goals."
+      ]
+    },
+    {
+      "role": "Senior Member of Technical Staff",
+      "company": "Ness Digital Engineering",
+      "location": "Bengaluru, Karnataka, India",
+      "duration": "May 2023 – May 2024",
+      "bullets": [
+        "Built a greenfield platform from scratch using Java, Spring Boot, and Spring Cloud, shipping to production in 4 months.",
+        "Led a team of 4 engineers through design reviews, code reviews, and sprint planning, improving velocity by 25%.",
+        "Reduced API latency by 50% by implementing Redis caching and concurrent processing with CompletableFuture.",
+        "Designed a runtime feature-toggle system using Spring Cloud Config, cutting deployment lead time by 60%.",
+        "Defined technical roadmaps and delivery milestones for 4 enterprise clients in coordination with product and QA teams."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer II",
+      "company": "Airtel Africa",
+      "location": "Gurugram, Haryana, India",
+      "duration": "Feb 2022 – May 2023",
+      "bullets": [
+        "Built high-throughput microservices using Java and Spring Boot for telecom billing, serving 10M+ users across Africa.",
+        "Delivered a reusable Customer Query Management platform, reducing query resolution time by 40%.",
+        "Refactored core modules using design patterns (Strategy, Factory), reducing code duplication by 35%.",
+        "Achieved 95% test coverage via TDD with JUnit and SonarQube; standardized OpenAPI/Swagger across 12+ services."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "company": "Aristocrat Technologies (B2B Gaming)",
+      "location": "Gurugram, Haryana, India",
+      "duration": "Jul 2021 – Feb 2022",
+      "bullets": [
+        "Optimized backend Java microservices for Class 2/3 gaming platforms, improving transaction throughput by 20%.",
+        "Implemented event-sourcing for user activity tracking, improving data accuracy to 99.5% with audit compliance.",
+        "Reduced peak-load API latency by 35% by implementing asynchronous processing with reactive streams."
+      ]
+    },
+    {
+      "role": "Member of Technical Staff",
+      "company": "Oracle",
+      "location": "Bengaluru, Karnataka, India",
+      "duration": "Jan 2021 – Jul 2021",
+      "bullets": [
+        "Developed TMF-compliant REST APIs in Java/Spring Boot for order management, reducing manual processing by 40%.",
+        "Reduced API latency from 800ms to under 200ms by implementing Redis caching and optimized pagination."
+      ]
+    },
+    {
+      "role": "Development Consultant",
+      "company": "CSG International",
+      "location": "Bengaluru, Karnataka, India",
+      "duration": "Sep 2018 – Nov 2020",
+      "bullets": [
+        "Developed 3 scalable Java backend services and REST APIs for billing/CRM integration, supporting 5M+ subscribers.",
+        "Built a reusable UI component library adopted by 3 teams, accelerating frontend delivery by 25%."
+      ]
+    },
+    {
+      "role": "System Analyst",
+      "company": "Amdocs",
+      "location": "Pune, Maharashtra, India",
+      "duration": "Feb 2017 – Sep 2018",
+      "bullets": [
+        "Improved legacy Java application performance by 30% through codebase refactoring and query optimization.",
+        "Maintained 100% SLA compliance across production environments via proactive monitoring and root-cause analysis."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "smc4j",
+      "description": "Java 17+ open-source trading library implementing Smart Money Concepts.",
+      "tags": [
+        "Java 17",
+        "Finance",
+        "Open Source"
+      ],
+      "url": "https://github.com/smc4j/smc4j",
+      "image": "/project1.png"
+    },
+    {
+      "title": "tradesmc-api",
+      "description": "Spring Boot REST API for backtesting SMC-based trading strategies.",
+      "tags": [
+        "Spring Boot",
+        "REST API",
+        "Trading"
+      ],
+      "url": "https://github.com/dharamcodes/tradesmc-api",
+      "image": "/project2.png"
+    },
+    {
+      "title": "ConnectX",
+      "description": "A modern, desktop-based Kafka management studio built with Tauri, React, and TypeScript. Manage clusters, produce messages, consume data, explore topics, and monitor metrics.",
+      "tags": [
+        "Tauri",
+        "React",
+        "TypeScript",
+        "Kafka"
+      ],
+      "url": "https://github.com/dharamcodes/connectx",
+      "image": "/connectX_6.png"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Doctor of Philosophy (PhD), Part-Time, Computer Science & Artificial Intelligence",
+      "institution": "National Institute of Technology (NIT) Nagpur",
+      "duration": "2025 – Present"
+    },
+    {
+      "degree": "Advanced General Management Program (AGMP), General Management",
+      "institution": "Institute of Management Technology (IMT), Ghaziabad",
+      "duration": "2022 – 2024"
+    },
+    {
+      "degree": "Postgraduate Diploma in Advanced Computing (PG-DAC), Computer Engineering",
+      "institution": "Centre for Development of Advanced Computing (CDAC) Hyderabad",
+      "duration": "2016 – 2017"
+    },
+    {
+      "degree": "Bachelor of Technology (B.Tech), Computer Science & Engineering",
+      "institution": "Babu Banarasi Das (BBD) University, Lucknow",
+      "duration": "2011 – 2015"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Linear Algebra : System of Linear equation and",
+      "url": "https://medium.com/ml-from-first-principles/linear-algebra-system-of-linear-equation-and-18c847de7b0d",
+      "date": "Mar 22, 2026",
+      "readingTime": "4 min read",
+      "summary": "Artificial Intelligence (AI) continues to transform industries — from healthcare and finance to autonomous vehicles and generative models. Yet, beneath all this sophistication lies a simple but powerful mathematical structure: systems of linear equations."
+    },
+    {
+      "title": "Best way to implement Singleton Design Pattern in Java",
+      "url": "https://medium.com/stackademic/best-way-to-implement-singleton-design-pattern-in-java-00dc0ba365de",
+      "date": "Apr 14, 2024",
+      "readingTime": "7 min read",
+      "summary": "The Singleton Pattern is a design pattern used in object-oriented programming to ensure that a class has only one instance and provides a global point of access to that instance."
+    },
+    {
+      "title": "Top 7 Spring Boot Design Patterns Unveiled",
+      "url": "https://medium.com/stackademic/top-7-spring-boot-design-patterns-unveiled-4a2569f8d324",
+      "date": "Dec 3, 2023",
+      "readingTime": "10 min read",
+      "summary": "Spring Boot, built on top of the Spring framework, incorporates various design patterns to enhance the development, scalability, maintainability, and overall architecture of Java applications."
+    },
+    {
+      "title": "5 Ways to tune JVM in a Docker for Spring Boot",
+      "url": "https://medium.com/stackademic/5-ways-i-tune-jvm-in-a-docker-image-ace1d8dba4b3",
+      "date": "Nov 17, 2023",
+      "readingTime": "5 min read",
+      "summary": "Tuning the Java Virtual Machine (JVM) within containers involves adjusting various JVM parameters to ensure optimal performance, efficient resource utilization, and stability within the containerized environment."
+    },
+    {
+      "title": "3 Ways to tune Apache Tomcat in Spring Boot",
+      "url": "https://medium.com/@dharam.codes/3-ways-to-tune-apache-tomcat-in-spring-boot-891691915cb2",
+      "date": "Nov 7, 2023",
+      "readingTime": "5 min read",
+      "summary": "Tuning Apache Tomcat threads in a Spring Boot application involves configuring the embedded Tomcat server to optimize its thread handling for your specific application."
+    },
+    {
+      "title": "How Apache Tomcat Works",
+      "url": "https://medium.com/stackademic/internal-architecture-and-working-of-apache-tomcat-4a0b1800627d",
+      "date": "Nov 1, 2023",
+      "readingTime": "5 min read",
+      "summary": "At its core, Tomcat is a servlet container and a web server combined. It’s capable of serving web applications by implementing the Java Servlet and JSP specifications."
+    }
+  ]
+}
