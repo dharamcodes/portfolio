@@ -12,8 +12,29 @@ export default function Home() {
 
       <Header name={personal.name} />
 
-      <main>
-        <section id="about" className="hero container fade-in">
+      <main itemScope itemType="https://schema.org/Person">
+        {/* Hidden SEO meta content for crawlers */}
+        <meta itemProp="name" content="Dharmendra Awasthi" />
+        <meta itemProp="jobTitle" content="Senior Software Engineer / Tech Lead" />
+        <meta itemProp="email" content="er.dharamk@gmail.com" />
+        <meta itemProp="telephone" content="+91-9454318045" />
+        <meta itemProp="url" content="https://dharamcodes.github.io" />
+        <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress" style={{ display: 'none' }}>
+          <meta itemProp="addressLocality" content="Bengaluru" />
+          <meta itemProp="addressRegion" content="Karnataka" />
+          <meta itemProp="addressCountry" content="IN" />
+        </span>
+        {/* Hidden keyword block for on-page SEO – visible to crawlers */}
+        <div aria-hidden="true" style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
+          Dharmendra Awasthi Senior Software Engineer Tech Lead Java Spring Boot Kafka AWS Kubernetes
+          Microservices Distributed Systems Backend Engineer Bengaluru India Open to Work
+          dharamcodes LinkedIn GitHub Java Developer Spring Cloud Redis PostgreSQL MongoDB
+          Event-Driven Architecture CQRS System Design HLD LLD CI/CD DevOps Terraform Docker
+          Luxoft Ness Digital Engineering Airtel Oracle Amdocs CSG Aristocrat Technologies Tesco
+          Senior Java Developer Bangalore Backend Engineer India Available for hire
+        </div>
+
+        <section id="about" className="hero container fade-in" aria-label={`About ${personal.name}`}>
           <div className="hero-content">
             <div className="hero-text">
               <h1>{personal.name.split(' ')[0]} <span className="gradient-text">{personal.name.split(' ').slice(1).join(' ')}</span></h1>
@@ -59,11 +80,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="experience" className="section container">
+        <section id="experience" className="section container" aria-label="Professional Experience">
           <h2 className="section-title">Professional <span className="gradient-text">Experience</span></h2>
           <div className="experience-timeline" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             {experience.map((exp, index) => (
-              <div key={index} className="experience-card glass">
+              <div key={index} className="experience-card glass" itemScope itemType="https://schema.org/WorkExperience">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '1rem' }}>
                   <div>
                     <h3 style={{ fontSize: '1.4rem', margin: 0, fontWeight: 700 }}>{exp.role} <span className="gradient-text">@ {exp.company}</span></h3>
@@ -81,7 +102,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="skills" className="section container">
+        <section id="skills" className="section container" aria-label="Technical Skills">
           <h2 className="section-title">Technical <span className="gradient-text">Arsenal</span></h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             {Object.entries(skills).map(([category, skillList], index) => (
@@ -97,7 +118,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="section container">
+        <section id="projects" className="section container" aria-label="Featured Projects">
           <h2 className="section-title">Featured <span className="gradient-text">Projects</span></h2>
           <div className="projects-grid">
             {projects.map((project, index) => (
@@ -134,7 +155,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="blogs" className="section container">
+        <section id="blogs" className="section container" aria-label="Technical Blog Publications">
           <h2 className="section-title">Technical <span className="gradient-text">Publications</span></h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem' }}>
             {blogs.map((blog, index) => (
@@ -161,7 +182,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="education" className="section container">
+        <section id="education" className="section container" aria-label="Education and Certifications">
           <h2 className="section-title">Education & <span className="gradient-text">Certifications</span></h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
             {education.map((edu, index) => (
@@ -174,7 +195,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="section container" style={{textAlign: 'center', maxWidth: '600px', margin: '0 auto'}}>
+        <section id="contact" className="section container" style={{textAlign: 'center', maxWidth: '600px', margin: '0 auto'}} aria-label="Contact Information">
           <h2 className="section-title">Let's <span className="gradient-text">Connect</span></h2>
           <p style={{color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.2rem', lineHeight: '1.6'}}>
             I'm currently open for new opportunities to build scalable backend systems and distributed platforms. Feel free to reach out via email or LinkedIn!

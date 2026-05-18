@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dharamcodes.github.io/sitemap.xml
+
+# Crawl-delay for well-behaved bots
+Crawl-delay: 10
