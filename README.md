@@ -23,8 +23,6 @@ A premium AI-generated developer portfolio website inspired by modern portfolio 
 The website should feel inspired by premium developer portfolios such as:
 
 - https://www.dharam.dev/
-- https://www.dhaval.dev/
-- https://www.portfoliogallery.dev/
 
 These portfolios typically use:
 - smooth scrolling
