@@ -373,7 +373,4 @@ High-quality developer portfolios usually:
 # 🌐 Useful References
 
 - https://www.dharam.dev/
-- https://www.dhaval.dev/
-- https://www.portfoliogallery.dev/
-- https://blink.new/p/modern-developer-portfolio-vite-vibrwlho
-- https://astro.build/themes/details/stellar-astro-dev-portfolio
+- https://www.linkedin.com/in/dharamcodes/
