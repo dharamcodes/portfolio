@@ -7,10 +7,7 @@ A premium AI-generated developer portfolio website inspired by modern portfolio 
 # ✨ Features
 
 - AI-generated personalized portfolio website
-- Resume parsing support
 - Dynamic content generation
-- Premium animations
-- Modern UI/UX
 - Fully responsive
 - SEO optimized
 - Dark/Light mode
