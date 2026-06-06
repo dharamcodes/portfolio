@@ -30,7 +30,7 @@ export default function Home() {
             <div className="hero-text">
               <h1>{personal.name.split(' ')[0]} <span className="gradient-text">{personal.name.split(' ').slice(1).join(' ')}</span></h1>
               <p style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--accent-1)', marginBottom: '1.2rem', marginTop: '-0.5rem' }}>
-                Lead Engineer & Senior Software Engineer | Software Developer
+                ( Lead Engineer ) 
               </p>
               <p>{personal.summary}</p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
