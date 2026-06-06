@@ -18,7 +18,7 @@ export default function Home() {
         <meta itemProp="jobTitle" content="Lead Engineer / Senior Software Engineer" />
         <meta itemProp="email" content="er.dharamk@gmail.com" />
         <meta itemProp="telephone" content="+91-9454318045" />
-        <meta itemProp="url" content="https://dharamcodes.github.io" />
+        <meta itemProp="url" content="https://github.com/dharamcodes" />
         <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress" style={{ display: 'none' }}>
           <meta itemProp="addressLocality" content="Bengaluru" />
           <meta itemProp="addressRegion" content="Karnataka" />

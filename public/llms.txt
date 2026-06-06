@@ -21,8 +21,8 @@ Dharmendra Awasthi is a Senior Software Engineer, Tech Lead, and PhD researcher 
 - **Observability**: Prometheus, Grafana, ELK Stack, Splunk, Zipkin, Distributed Tracing
 
 ## Navigation & Contact
-- **Website**: [https://dharamcodes.github.io/](https://dharamcodes.github.io/)
-- **Full Markdown CV**: [https://dharamcodes.github.io/llms-full.txt](https://dharamcodes.github.io/llms-full.txt)
+- **Website**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
+- **Full Markdown CV**: [https://github.com/dharamcodes/llms-full.txt](https://github.com/dharamcodes/llms-full.txt)
 - **LinkedIn**: [https://www.linkedin.com/in/dharamcodes/](https://www.linkedin.com/in/dharamcodes/)
 - **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
 - **Email**: [er.dharamk@gmail.com](mailto:er.dharamk@gmail.com)

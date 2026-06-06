@@ -19,12 +19,12 @@ export default function PrivacyPolicy() {
 
       <header className="header">
         <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <Link href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }} prefetch={false}>
             <div className="logo" style={{ cursor: "pointer" }} aria-label={`${personal.name} portfolio homepage`}>
               dharam<span className="gradient-text">.dev</span>
             </div>
           </Link>
-          <Link href="/" className="btn btn-secondary" style={{ padding: "0.5rem 1.5rem", fontSize: "0.85rem", textDecoration: "none" }}>
+          <Link href="/" className="btn btn-secondary" style={{ padding: "0.5rem 1.5rem", fontSize: "0.85rem", textDecoration: "none" }} prefetch={false}>
             ← Back to Home
           </Link>
         </div>
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
 
         <section style={{ marginBottom: "2.5rem" }}>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "var(--text-primary)" }}>
-            Welcome to the professional portfolio of <strong>{personal.name}</strong>. I respect your privacy and am committed to protecting your personal data. This privacy policy explains how data is handled when you visit my website (<a href="https://dharamcodes.github.io" className="gradient-text" style={{ fontWeight: 600, textDecoration: "none" }}>dharamcodes.github.io</a>).
+            Welcome to the professional portfolio of <strong>{personal.name}</strong>. I respect your privacy and am committed to protecting your personal data. This privacy policy explains how data is handled when you visit my website (<a href="https://github.com/dharamcodes" className="gradient-text" style={{ fontWeight: 600, textDecoration: "none" }}>github.com/dharamcodes</a>).
           </p>
         </section>
 

@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const BASE_URL = "https://dharamcodes.github.io";
+const BASE_URL = "https://github.com/dharamcodes";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
