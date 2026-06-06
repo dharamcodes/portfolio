@@ -15,7 +15,7 @@ export default function Home() {
       <main itemScope itemType="https://schema.org/Person">
         {/* Hidden SEO meta content for crawlers */}
         <meta itemProp="name" content="Dharmendra Awasthi" />
-        <meta itemProp="jobTitle" content="Senior Software Engineer / Tech Lead" />
+        <meta itemProp="jobTitle" content="Lead Engineer / Senior Software Engineer" />
         <meta itemProp="email" content="er.dharamk@gmail.com" />
         <meta itemProp="telephone" content="+91-9454318045" />
         <meta itemProp="url" content="https://dharamcodes.github.io" />
@@ -24,20 +24,14 @@ export default function Home() {
           <meta itemProp="addressRegion" content="Karnataka" />
           <meta itemProp="addressCountry" content="IN" />
         </span>
-        {/* Hidden keyword block for on-page SEO – visible to crawlers */}
-        <div aria-hidden="true" style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
-          Dharmendra Awasthi Senior Software Engineer Tech Lead Java Spring Boot Kafka AWS Kubernetes
-          Microservices Distributed Systems Backend Engineer Bengaluru India Open to Work
-          dharamcodes LinkedIn GitHub Java Developer Spring Cloud Redis PostgreSQL MongoDB
-          Event-Driven Architecture CQRS System Design HLD LLD CI/CD DevOps Terraform Docker
-          Luxoft Ness Digital Engineering Airtel Oracle Amdocs CSG Aristocrat Technologies Tesco
-          Senior Java Developer Bangalore Backend Engineer India Available for hire
-        </div>
 
         <section id="about" className="hero container fade-in" aria-label={`About ${personal.name}`}>
           <div className="hero-content">
             <div className="hero-text">
               <h1>{personal.name.split(' ')[0]} <span className="gradient-text">{personal.name.split(' ').slice(1).join(' ')}</span></h1>
+              <p style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--accent-1)', marginBottom: '1.2rem', marginTop: '-0.5rem' }}>
+                Lead Engineer & Senior Software Engineer | Software Developer
+              </p>
               <p>{personal.summary}</p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="#experience" className="btn btn-primary">View Experience</a>
@@ -196,9 +190,9 @@ export default function Home() {
         </section>
 
         <section id="contact" className="section container" style={{textAlign: 'center', maxWidth: '600px', margin: '0 auto'}} aria-label="Contact Information">
-          <h2 className="section-title">Let's <span className="gradient-text">Connect</span></h2>
+          <h2 className="section-title">Let&apos;s <span className="gradient-text">Connect</span></h2>
           <p style={{color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.2rem', lineHeight: '1.6'}}>
-            I'm currently open for new opportunities to build scalable backend systems and distributed platforms. Feel free to reach out via email or LinkedIn!
+            I&apos;m currently open for new opportunities to build scalable backend systems and distributed platforms. Feel free to reach out via email or LinkedIn!
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href={`mailto:${contact.email}`} className="btn btn-contact">
@@ -227,8 +221,11 @@ export default function Home() {
       </main>
 
       <footer className="footer">
-        <div className="container">
-          <p>© {new Date().getFullYear()} {personal.name}.</p>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', alignItems: 'center' }}>
+          <p style={{ margin: 0 }}>© {new Date().getFullYear()} {personal.name}.</p>
+          <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', fontSize: '0.85rem' }}>
+            <a href="/privacy">Privacy Policy</a>
+          </div>
         </div>
       </footer>
     </>

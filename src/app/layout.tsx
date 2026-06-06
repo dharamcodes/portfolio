@@ -12,19 +12,23 @@ const BASE_URL = "https://dharamcodes.github.io";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Dharmendra Awasthi | Senior Software Engineer – Java, Spring Boot, Kafka, AWS",
+    default: "Dharmendra Awasthi | Lead Engineer & Senior Software Engineer – Software Developer",
     template: "%s | Dharmendra Awasthi",
   },
   description:
-    "Dharmendra Awasthi is a Senior Software Engineer and Tech Lead with 9+ years of experience building large-scale distributed systems, cloud-native microservices, and high-throughput backend platforms. Expert in Java, Spring Boot, Kafka, AWS, Kubernetes, and Microservices Architecture. Open to Senior Engineer, Staff Engineer, and Tech Lead roles.",
+    "Dharmendra Awasthi is a Lead Engineer, Senior Software Engineer, and Software Developer with 9+ years of experience building large-scale distributed systems, backend Java platforms, and cloud-native microservices. Expert in Java, Spring Boot, Kafka, AWS, Kubernetes, and Microservices Architecture. Open to Lead Engineer, Staff Engineer, and Senior Developer roles.",
   keywords: [
-    // Core identity
+    // Core identity keywords
+    "Dharmendra",
     "Dharmendra Awasthi",
+    "Awasthi",
     "dharamcodes",
+    "Lead Engineer",
+    "Software Developer",
     "Senior Software Engineer",
+    "Backend Developer",
     "Tech Lead",
     "Backend Engineer",
-    "Software Developer",
     "Full Stack Engineer",
     // Technologies (primary)
     "Java",
@@ -73,6 +77,8 @@ export const metadata: Metadata = {
     "Retail Tech",
     "Gaming Backend Engineer",
     // Role targets (HR/Recruiter searches)
+    "Lead Engineer India",
+    "Software Developer Bengaluru",
     "Senior Software Engineer India",
     "Senior Java Developer Bengaluru",
     "Backend Engineer Bangalore",
@@ -115,15 +121,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BASE_URL,
     siteName: "Dharmendra Awasthi – Portfolio",
-    title: "Dharmendra Awasthi | Senior Software Engineer – Java, Spring Boot, Kafka, AWS",
+    title: "Dharmendra Awasthi | Lead Engineer & Senior Software Engineer – Software Developer",
     description:
-      "9+ years building high-throughput distributed systems and cloud-native microservices. Expert in Java, Spring Boot, Kafka, AWS, Kubernetes. Currently a Tech Lead at Luxoft (client: Tesco). Open to Senior/Staff Engineer and Tech Lead opportunities.",
+      "9+ years building high-throughput distributed systems and cloud-native microservices. Expert in Java, Spring Boot, Kafka, AWS, Kubernetes. Lead Engineer & Software Developer. Currently a Tech Lead @ Luxoft (client: Tesco).",
     images: [
       {
         url: "/profile.png",
         width: 800,
         height: 800,
-        alt: "Dharmendra Awasthi – Senior Software Engineer & Tech Lead",
+        alt: "Dharmendra Awasthi – Lead Engineer & Senior Software Engineer",
       },
     ],
     firstName: "Dharmendra",
@@ -133,7 +139,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dharmendra Awasthi | Senior Software Engineer – Java, Kafka, AWS",
+    title: "Dharmendra Awasthi | Lead Engineer & Senior Software Engineer",
     description:
       "9+ years building high-throughput distributed systems. Tech Lead @ Luxoft (Tesco). Expert: Java, Spring Boot, Kafka, AWS, Kubernetes, Microservices.",
     images: ["/profile.png"],
@@ -148,85 +154,104 @@ export const metadata: Metadata = {
   },
 };
 
-// JSON-LD structured data (Google Rich Results)
-const personJsonLd = {
+// JSON-LD structured data (Google Rich Results & LLM indexing)
+const profilePageJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Dharmendra Awasthi",
-  alternateName: "dharamcodes",
-  url: BASE_URL,
-  image: `${BASE_URL}/profile.png`,
-  email: "er.dharamk@gmail.com",
-  telephone: "+91-9454318045",
-  jobTitle: "Senior Software Engineer / Tech Lead",
-  description:
-    "Senior Software Engineer and Tech Lead with 9+ years of experience in Java, Spring Boot, Kafka, AWS, and large-scale distributed microservices architecture.",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Bengaluru",
-    addressRegion: "Karnataka",
-    addressCountry: "IN",
-  },
-  sameAs: [
-    "https://www.linkedin.com/in/dharamcodes",
-    "https://github.com/dharamcodes",
-    "https://medium.com/@dharam.codes",
-  ],
-  alumniOf: [
-    {
-      "@type": "EducationalOrganization",
-      name: "National Institute of Technology (NIT) Nagpur",
+  "@type": "ProfilePage",
+  "url": BASE_URL,
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Dharmendra Awasthi",
+    "alternateName": ["Dharmendra", "Awasthi", "dharamcodes"],
+    "url": BASE_URL,
+    "image": `${BASE_URL}/profile.png`,
+    "email": "er.dharamk@gmail.com",
+    "telephone": "+91-9454318045",
+    "jobTitle": "Lead Engineer / Senior Software Engineer",
+    "description":
+      "Lead Engineer, Senior Software Engineer, and Software Developer with 9+ years of experience in Java, Spring Boot, Kafka, AWS, and large-scale distributed microservices architecture.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN",
     },
-    {
-      "@type": "EducationalOrganization",
-      name: "CDAC Hyderabad",
+    "sameAs": [
+      "https://www.linkedin.com/in/dharamcodes/",
+      "https://github.com/dharamcodes",
+      "https://medium.com/@dharam.codes",
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "National Institute of Technology (NIT) Nagpur",
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "CDAC Hyderabad",
+      },
+    ],
+    "knowsAbout": [
+      "Software Development",
+      "Software Engineering",
+      "System Design",
+      "Java",
+      "Spring Boot",
+      "Spring Cloud",
+      "Apache Kafka",
+      "AWS",
+      "Microservices Architecture",
+      "Distributed Systems",
+      "Kubernetes",
+      "Docker",
+      "Redis",
+      "PostgreSQL",
+      "MongoDB",
+      "Event-Driven Architecture",
+      "CQRS",
+      "Domain-Driven Design",
+      "CI/CD",
+      "DevOps",
+      "gRPC",
+      "REST APIs",
+    ],
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "Lead Engineer",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Bengaluru, India",
+        },
+        "skills":
+          "Java, Spring Boot, Kafka, AWS, Kubernetes, Microservices, Distributed Systems, System Design, Team Leadership",
+      },
+      {
+        "@type": "Occupation",
+        "name": "Senior Software Engineer",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Bengaluru, India",
+        },
+        "skills":
+          "Java, Spring Boot, Kafka, AWS, Kubernetes, Microservices, Distributed Systems, System Design",
+      },
+      {
+        "@type": "Occupation",
+        "name": "Software Developer",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Bengaluru, India",
+        },
+        "skills":
+          "Java, Spring Boot, Kafka, AWS, Kubernetes, Microservices, Distributed Systems, System Design",
+      }
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Luxoft",
     },
-  ],
-  knowsAbout: [
-    "Java",
-    "Spring Boot",
-    "Spring Cloud",
-    "Apache Kafka",
-    "AWS",
-    "Microservices Architecture",
-    "Distributed Systems",
-    "Kubernetes",
-    "Docker",
-    "Redis",
-    "PostgreSQL",
-    "MongoDB",
-    "System Design",
-    "Event-Driven Architecture",
-    "CQRS",
-    "Domain-Driven Design",
-    "CI/CD",
-    "DevOps",
-    "gRPC",
-    "REST APIs",
-  ],
-  hasOccupation: {
-    "@type": "Occupation",
-    name: "Senior Software Engineer",
-    occupationLocation: {
-      "@type": "City",
-      name: "Bengaluru, India",
-    },
-    estimatedSalary: {
-      "@type": "MonetaryAmountDistribution",
-      name: "base",
-      currency: "INR",
-      duration: "P1Y",
-      percentile10: "2400000",
-      percentile50: "3600000",
-      percentile90: "5000000",
-    },
-    skills:
-      "Java, Spring Boot, Kafka, AWS, Kubernetes, Microservices, Distributed Systems, System Design",
-  },
-  worksFor: {
-    "@type": "Organization",
-    name: "Luxoft",
-  },
+  }
 };
 
 export default function RootLayout({
@@ -250,9 +275,9 @@ export default function RootLayout({
       </head>
       <body>
         <Script
-          id="person-jsonld"
+          id="profile-jsonld"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
           strategy="beforeInteractive"
         />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>

@@ -665,6 +665,14 @@ h1, h2, h3 {
   color: var(--text-secondary);
   font-size: 0.95rem;
 }
+.footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer a:hover {
+  color: var(--text-primary);
+}
 
 /* Education Card */
 .education-card {

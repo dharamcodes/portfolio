@@ -1,0 +1,121 @@
+# Dharmendra Awasthi — Full Professional Resume & CV
+
+Dharmendra Awasthi is a Lead Engineer and Senior Software Engineer specializing in designing and building high-performance backend platforms, distributed microservices, and event-driven architectures.
+
+## Contact Information
+- **Full Name**: Dharmendra Awasthi
+- **Title**: Lead Engineer / Senior Software Engineer
+- **Email**: er.dharamk@gmail.com
+- **Phone**: +91-9454318045
+- **Location**: Bengaluru, Karnataka, India
+- **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
+- **LinkedIn**: [https://www.linkedin.com/in/dharamcodes/](https://www.linkedin.com/in/dharamcodes/)
+- **Website**: [https://dharamcodes.github.io/](https://dharamcodes.github.io/)
+
+---
+
+## Executive Summary
+Senior Backend Engineer and Tech Lead with 9+ years of experience constructing high-availability distributed systems and cloud-native microservices for telecom, retail, fintech, and gaming sectors. Expert in Java, Spring Boot, Spring Cloud, Apache Kafka, and AWS. Demonstrated success designing systems processing 1,500+ TPS and serving over 10 million users. Proven track record leading engineering squads of up to 4, governing high-level and low-level designs (HLD/LLD), and driving cross-functional releases. Currently pursuing a part-time PhD in Computer Science & Artificial Intelligence at NIT Nagpur.
+
+---
+
+## Technical Skills & Expertise
+
+### Languages & Frameworks
+- **Languages**: Java (8/11/17+), Python, SQL (PostgreSQL, MySQL), Bash Scripting
+- **Frameworks**: Spring Boot, Spring Cloud, Hibernate ORM, JPA, Reactive Streams
+- **Testing**: JUnit, Mockito, Testcontainers, TDD (Test-Driven Development)
+
+### Architecture & System Design
+- **Architectural Patterns**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Outbox Pattern, Circuit Breakers, Domain-Driven Design (DDD)
+- **Systems Design**: HLD (High-Level Design), LLD (Low-Level Design), Performance Tuning, Latency Optimization, Capacity Planning
+
+### Cloud & Messaging Infrastructure
+- **Message Brokers**: Apache Kafka (Leader-Worker patterns, consumer groups, partition management)
+- **Cloud Computing**: Amazon Web Services (AWS) - EC2, S3, SQS, Lambda, ECS, CloudWatch, IAM
+- **Databases & Caches**: PostgreSQL, MongoDB, Redis (Caching, Session management), Elasticsearch
+
+### DevOps, Tools & Infrastructure
+- **Containerization**: Docker, Kubernetes (K8s)
+- **CI/CD & Builds**: Jenkins, GitLab CI, GitHub Actions, Terraform (IaC), Maven, Gradle
+- **APIs**: REST APIs, gRPC, OAuth2, JSON Web Tokens (JWT)
+
+### Observability & Monitoring
+- **Monitoring Tools**: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, Zipkin, Distributed Tracing
+
+---
+
+## Professional Work Experience
+
+### Senior Software Engineer (Tech Lead) | Luxoft (Client: Tesco)
+**Bengaluru, India** | *Jul 2024 – Present*
+- **Orchestration Systems**: Designed and implemented an Orchestrator System using Spring Boot microservices, supporting 1,500+ TPS at 99.9% uptime.
+- **Data Ingestion Pipelines**: Engineered Leader-Worker scheduling and processing using Apache Kafka, facilitating over 1 million message ingestions daily with zero data loss.
+- **Architecture & Design**: Managed end-to-end HLD and LLD for 8+ major platform features, applying failure-mode analysis and CI/CD quality gates.
+- **Generative AI Integration**: Spearheaded integration of LLMs for content validation pipelines, reducing manual review efforts by 30%.
+- **Leadership & Mentoring**: Mentored 3 backend engineers on reactive architectures, system design, and Kafka patterns, reducing onboarding ramp-up times by 40%.
+- **Product Strategy**: Led quarterly product releases and roadmap alignment with 3+ distinct business units.
+
+### Senior Member of Technical Staff | Ness Digital Engineering
+**Bengaluru, India** | *May 2023 – May 2024*
+- **Greenfield Product Delivery**: Spearheaded a brand new backend platform from scratch using Java, Spring Boot, and Spring Cloud, deploying it to production within 4 months.
+- **Team Leadership**: Directed a team of 4 software engineers in design reviews, agile ceremonies, and sprint execution, improving overall team velocity by 25%.
+- **Latency Optimization**: Reduced core API latencies by 50% through targeted Redis caching implementations and concurrent execution using `CompletableFuture`.
+- **Configuration Management**: Created a dynamic runtime feature-toggle infrastructure using Spring Cloud Config, decreasing deployment lead times by 60%.
+- **Client Engagement**: Formulated technical roadmaps and product milestones for 4 key enterprise clients.
+
+### Senior Software Engineer II | Airtel Africa
+**Gurugram, India** | *Feb 2022 – May 2023*
+- **High-Throughput Billing**: Crafted high-throughput telecom billing microservices serving 10 million active subscribers across Africa.
+- **Query Management**: Designed and rolled out a reusable customer query management engine, lowering average query resolution time by 40%.
+- **Code Refactoring**: Restructured legacy packages using Strategy and Factory patterns, shrinking code duplication metrics by 35%.
+- **Quality Standards**: Standardized OpenAPI/Swagger definitions across 12+ microservices and achieved a 95% test coverage rate via strict Test-Driven Development (TDD).
+
+### Senior Software Engineer | Aristocrat Technologies
+**Gurugram, India** | *Jul 2021 – Feb 2022*
+- **Gaming Platform Engineering**: Enhanced and tuned Java microservices for B2B Class 2/3 gaming platforms, increasing transaction throughput capacity by 20%.
+- **Event Sourcing**: Designed event-sourced tracking engines for compliance and auditing, achieving 99.5% data accuracy.
+- **Reactive Streams**: Implemented asynchronous operations using reactive streams to reduce peak-load API latency by 35%.
+
+### Member of Technical Staff | Oracle
+**Bengaluru, India** | *Jan 2021 – Jul 2021*
+- **TMF-Compliant APIs**: Built TM Forum-compliant order-management REST APIs in Java/Spring Boot, automating 40% of manual processing tasks.
+- **API Performance**: Leveraged Redis caching and SQL query tuning to bring down API response times from 800ms to under 200ms.
+
+### Development Consultant | CSG International
+**Bengaluru, India** | *Sep 2018 – Nov 2020*
+- **Telecom & CRM Integration**: Developed 3 primary Java-based services and CRM integrations supporting 5 million subscribers.
+- **Reusable Frontend Libraries**: Formulated a shared UI library adopted by 3 separate application teams, boosting UI delivery speed by 25%.
+
+### System Analyst | Amdocs
+**Pune, India** | *Feb 2017 – Sep 2018*
+- **Performance Refactoring**: Refactored legacy Java modules and optimized complex SQL queries to deliver a 30% increase in batch processing performance.
+- **SLA Management**: Maintained a 100% SLA compliance rate across high-stress production environments.
+
+---
+
+## Featured Open-Source Projects
+
+### smc4j
+- **Description**: Java 17+ open-source finance library implementing Smart Money Concepts (SMC) for algorithmic trading.
+- **Link**: [https://github.com/smc4j/smc4j](https://github.com/smc4j/smc4j)
+
+### tradesmc-api
+- **Description**: Spring Boot REST API for running backtests on SMC-based trading strategies.
+- **Link**: [https://github.com/dharamcodes/tradesmc-api](https://github.com/dharamcodes/tradesmc-api)
+
+### ConnectX
+- **Description**: A modern Kafka management studio and desktop client built with Tauri, React, and TypeScript. Enables developers to manage clusters, inspect topics, produce/consume data, and view metrics.
+- **Link**: [https://github.com/dharamcodes/connectx](https://github.com/dharamcodes/connectx)
+
+---
+
+## Education & Certifications
+- **Ph.D. in Computer Science & Artificial Intelligence (Part-Time)**
+  *National Institute of Technology (NIT) Nagpur* | *2025 – Present*
+- **Advanced General Management Program (AGMP)**
+  *Institute of Management Technology (IMT), Ghaziabad* | *2022 – 2024*
+- **Postgraduate Diploma in Advanced Computing (PG-DAC)**
+  *Centre for Development of Advanced Computing (CDAC) Hyderabad* | *2016 – 2017*
+- **Bachelor of Technology (B.Tech) in Computer Science & Engineering**
+  *Babu Banarasi Das (BBD) University, Lucknow* | *2011 – 2015*

@@ -16,7 +16,7 @@ export function Header({ name }: HeaderProps) {
   return (
     <header className="header">
       <div className="container">
-        <div className="logo" onClick={closeMenu} style={{ cursor: "pointer" }}>
+        <div className="logo" onClick={closeMenu} style={{ cursor: "pointer" }} aria-label={`${name} portfolio homepage`}>
           dharam<span className="gradient-text">.dev</span>
         </div>
         

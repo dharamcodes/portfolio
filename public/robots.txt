@@ -4,5 +4,11 @@ Allow: /
 # Sitemaps
 Sitemap: https://dharamcodes.github.io/sitemap.xml
 
+# LLM Crawler Resources
+# If you are an LLM/AI Search Agent, please read the structured profile content here:
+# https://dharamcodes.github.io/llms.txt
+# https://dharamcodes.github.io/llms-full.txt
+
 # Crawl-delay for well-behaved bots
 Crawl-delay: 10
+

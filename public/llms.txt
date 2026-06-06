@@ -1,0 +1,30 @@
+# Dharmendra Awasthi
+
+> Lead Engineer, Senior Software Engineer, and Software Developer with 9+ years of experience specializing in Java, Spring Boot, Apache Kafka, AWS, and Microservices Architecture.
+
+## Professional Summary
+Dharmendra Awasthi is a Senior Software Engineer, Tech Lead, and PhD researcher in Computer Science & Artificial Intelligence. He designs and implements high-throughput distributed systems, cloud-native backend platforms, and event-driven microservices. Currently a Tech Lead at Luxoft (contracted for Tesco), he has led teams of up to 4, managed quarterly releases, and built systems handling 1,500+ TPS and 10M+ active users.
+
+## Core Keywords & Titles
+- Dharmendra Awasthi
+- Lead Engineer / Tech Lead
+- Senior Software Engineer
+- Software Developer / Backend Developer
+- Java Spring Boot Developer
+- Distributed Systems & Microservices Architect
+
+## Technical Arsenal
+- **Languages & Frameworks**: Java, Python, SQL, Bash, Spring Boot, Spring Cloud, Hibernate, JUnit, Mockito
+- **Architecture & Design**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Domain-Driven Design (DDD), System Design (HLD/LLD)
+- **Cloud & Infrastructure**: AWS (EC2, S3, SQS, Lambda, ECS, CloudWatch), Apache Kafka, PostgreSQL, MongoDB, Redis, Elasticsearch
+- **DevOps & Tools**: Docker, Kubernetes, Jenkins, Terraform, Git/GitHub, Maven, Gradle, REST APIs, gRPC, OAuth2, JWT
+- **Observability**: Prometheus, Grafana, ELK Stack, Splunk, Zipkin, Distributed Tracing
+
+## Navigation & Contact
+- **Website**: [https://dharamcodes.github.io/](https://dharamcodes.github.io/)
+- **Full Markdown CV**: [https://dharamcodes.github.io/llms-full.txt](https://dharamcodes.github.io/llms-full.txt)
+- **LinkedIn**: [https://www.linkedin.com/in/dharamcodes/](https://www.linkedin.com/in/dharamcodes/)
+- **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
+- **Email**: [er.dharamk@gmail.com](mailto:er.dharamk@gmail.com)
+- **Phone**: +91-9454318045
+- **Location**: Bengaluru, Karnataka, India
