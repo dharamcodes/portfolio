@@ -1,0 +1,182 @@
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.skill-tag {
+  padding: 0.6rem 1.3rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: var(--border-radius-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--card-shadow);
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  background: rgba(56, 189, 248, 0.1);
+  border-color: var(--accent-1);
+  color: var(--accent-1);
+}
+
+.skills-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.skills-filter-btn {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skills-filter-btn:hover {
+  border-color: var(--accent-1);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.skills-filter-btn-active {
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.25);
+}
+
+.skills-unified-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  width: 100%;
+  max-height: 52vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+
+.skill-badge-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: var(--border-radius-md);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.skill-badge-card-dimmed {
+  opacity: 0.12;
+  transform: scale(0.93);
+  pointer-events: none;
+}
+
+.skill-badge-card-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.skill-badge-card-active:hover {
+  transform: translateY(-2px) scale(1.02);
+  border-color: var(--accent-1);
+  box-shadow: var(--hover-shadow);
+}
+
+/* Category dot colors & glows */
+.skill-badge-card[data-category="Languages & Frameworks"] .category-dot {
+  background: #0ea5e9;
+  box-shadow: 0 0 8px rgba(14, 165, 233, 0.6);
+}
+
+.skill-badge-card[data-category="Architecture & Design"] .category-dot {
+  background: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.6);
+}
+
+.skill-badge-card[data-category="Cloud & Infrastructure"] .category-dot {
+  background: #f59e0b;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+}
+
+.skill-badge-card[data-category="DevOps & Tools"] .category-dot {
+  background: #10b981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+.skill-badge-card[data-category="Observability"] .category-dot {
+  background: #f43f5e;
+  box-shadow: 0 0 8px rgba(244, 63, 94, 0.6);
+}
+
+.skill-badge-card[data-category="AI & Machine Learning"] .category-dot {
+  background: #a855f7;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+}
+
+.skill-badge-card[data-category="Practices"] .category-dot {
+  background: #14b8a6;
+  box-shadow: 0 0 8px rgba(20, 184, 166, 0.6);
+}
+
+.category-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    /* ── TECHNICAL ARSENAL — mobile overrides ── */
+    .skills-filter-bar {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      scrollbar-width: none;
+      margin-bottom: 1.25rem;
+      mask-image: linear-gradient(to right, black 85%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+      justify-content: flex-start;
+    }
+    .skills-filter-bar::-webkit-scrollbar {
+      display: none;
+    }
+    .skills-filter-btn {
+      flex: none;
+      font-size: 0.78rem;
+      padding: 0.4rem 0.9rem;
+    }
+    .skills-unified-grid {
+      max-height: none;
+      overflow-y: visible;
+      padding-right: 0;
+      gap: 0.5rem;
+      justify-content: flex-start;
+    }
+    .skill-badge-card {
+      padding: 0.45rem 0.85rem;
+      font-size: 0.8rem;
+    }
+    .skill-badge-card-dimmed {
+      display: none;
+      /* Completely hide other categories' tags on mobile to save vertical height */
+    }
+}
