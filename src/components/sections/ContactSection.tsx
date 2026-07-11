@@ -1,3 +1,5 @@
+import styles from "./ContactSection.module.css";
+
 interface ContactSectionProps {
   contact: {
     email: string;
@@ -12,11 +14,11 @@ export function ContactSection({ contact }: ContactSectionProps) {
       <h2 className="section-title">
         Let&apos;s <span className="gradient-text">Connect</span>
       </h2>
-      <div className="contact-inner">
-        <div className="contact-card glass">
-          <div className="contact-icon-wrapper">
+      <div className={styles['contact-inner']}>
+        <div className={`${styles['contact-card']} glass`}>
+          <div className={styles['contact-icon-wrapper']}>
             <svg
-              className="contact-envelope-icon"
+              className={styles['contact-envelope-icon']}
               width="48"
               height="48"
               viewBox="0 0 24 24"
@@ -31,13 +33,13 @@ export function ContactSection({ contact }: ContactSectionProps) {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
           </div>
-          <h3 className="contact-subtitle">Have an interesting challenge or opportunity?</h3>
-          <p className="contact-desc">
+          <h3 className={styles['contact-subtitle']}>Have an interesting challenge or opportunity?</h3>
+          <p className={styles['contact-desc']}>
             I specialize in designing and engineering high-throughput, low-latency distributed
             systems, cloud-native backend platforms, and event-driven architectures. Let&apos;s
             build something great together.
           </p>
-          <div className="contact-btn-row">
+          <div className={styles['contact-btn-row']}>
             <a href={`mailto:${contact.email}`} className="btn btn-contact">
               <svg
                 className="btn-icon"

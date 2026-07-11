@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import styles from "./ExperienceSection.module.css";
 
 interface ExperienceItem {
   role: string;
@@ -24,49 +25,49 @@ export function ExperienceSection({
       <h2 className="section-title">
         Professional <span className="gradient-text">Experience</span>
       </h2>
-      <div className="experience-tab-container">
-        <div className="experience-tabs" role="tablist" aria-label="Experience tabs">
+      <div className={styles['experience-tab-container']}>
+        <div className={styles['experience-tabs']} role="tablist" aria-label="Experience tabs">
           {experience.map((exp, i) => (
             <button
               key={i}
-              className={`experience-tab-btn${i === activeExpIndex ? " active" : ""}`}
+              className={`${styles['experience-tab-btn']}${i === activeExpIndex ? ` ${styles.active}` : ""}`}
               onClick={() => setActiveExpIndex(i)}
               role="tab"
               aria-selected={i === activeExpIndex}
               aria-controls={`exp-details-${i}`}
               id={`exp-tab-${i}`}
             >
-              <span className="exp-tab-company">{exp.company.split(" ")[0]}</span>
-              <span className="exp-tab-period">{exp.duration.split(" – ")[1] ?? exp.duration}</span>
+              <span className={styles['exp-tab-company']}>{exp.company.split(" ")[0]}</span>
+              <span className={styles['exp-tab-period']}>{exp.duration.split(" – ")[1] ?? exp.duration}</span>
             </button>
           ))}
         </div>
 
-        <div className="scrollable-content experience-details-wrapper glass">
+        <div className={`scrollable-content ${styles['experience-details-wrapper']} glass`}>
           {experience.map((exp, i) => {
             const isActive = i === activeExpIndex;
             return (
               <div
                 key={i}
                 id={`exp-details-${i}`}
-                className={`experience-tab-details ${isActive ? "active" : "inactive"}`}
+                className={`${styles['experience-tab-details']} ${isActive ? styles.active : styles.inactive}`}
                 itemScope
                 itemType="https://schema.org/WorkExperience"
                 role="tabpanel"
                 aria-labelledby={`exp-tab-${i}`}
                 aria-hidden={!isActive}
               >
-                <div className="exp-detail-header">
+                <div className={styles['exp-detail-header']}>
                   <div>
-                    <h3 className="exp-detail-role">
+                    <h3 className={styles['exp-detail-role']}>
                       {exp.role}{" "}
                       <span className="gradient-text">@ {exp.company}</span>
                     </h3>
-                    <p className="exp-detail-location">{exp.location}</p>
+                    <p className={styles['exp-detail-location']}>{exp.location}</p>
                   </div>
-                  <span className="exp-detail-duration">{exp.duration}</span>
+                  <span className={styles['exp-detail-duration']}>{exp.duration}</span>
                 </div>
-                <ul className="experience-bullets">
+                <ul className={styles['experience-bullets']}>
                   {exp.bullets.map((bullet, j) => (
                     <li key={j}>{bullet}</li>
                   ))}

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { Pagination } from "../Pagination";
+import styles from "./BlogsSection.module.css";
 
 interface BlogItem {
   title: string;
@@ -34,28 +35,28 @@ export function BlogsSection({ blogs }: BlogsSectionProps) {
         Technical <span className="gradient-text">Publications</span>
         <span className="scroll-hint-badge">Swipe ↔</span>
       </h2>
-      <div className="scrollable-content blogs-grid-container" key={blogsPage}>
+      <div className={`scrollable-content ${styles['blogs-grid-container']}`} key={blogsPage}>
         {paginatedBlogs.map((blog, i) => (
           <a
             key={i}
             href={blog.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="blog-card glass"
+            className={`${styles['blog-card']} glass`}
             role="article"
             aria-label={`Blog post: ${blog.title}`}
           >
             <div>
-              <div className="blog-card-meta">
-                <span className="blog-card-date">{blog.date}</span>
-                <span className="blog-card-time">{blog.readingTime}</span>
+              <div className={styles['blog-card-meta']}>
+                <span className={styles['blog-card-date']}>{blog.date}</span>
+                <span className={styles['blog-card-time']}>{blog.readingTime}</span>
               </div>
-              <h3 className="blog-card-title">{blog.title}</h3>
-              <p className="blog-card-desc">{blog.summary}</p>
+              <h3 className={styles['blog-card-title']}>{blog.title}</h3>
+              <p className={styles['blog-card-desc']}>{blog.summary}</p>
             </div>
-            <span className="blog-card-link">
+            <span className={styles['blog-card-link']}>
               Read on Medium{" "}
-              <span className="arrow" aria-hidden="true">
+              <span className={styles.arrow} aria-hidden="true">
                 ↗
               </span>
             </span>

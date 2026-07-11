@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import { Pagination } from "../Pagination";
+import styles from "./ProjectsSection.module.css";
 
 interface ProjectItem {
   title: string;
@@ -34,21 +35,21 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
       <h2 className="section-title">
         Featured <span className="gradient-text">Projects</span>
       </h2>
-      <div className="scrollable-content projects-grid" key={projectsPage}>
+      <div className={`scrollable-content ${styles['projects-grid']}`} key={projectsPage}>
         {paginatedProjects.map((project, i) => (
           <a
             key={i}
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-card"
+            className={styles['project-card']}
             style={{ textDecoration: "none", color: "inherit" }}
             role="article"
             aria-label={`Project: ${project.title}`}
           >
-            <div className="project-img-wrapper">
-              <div className="project-img-overlay">
-                <span className="project-img-overlay-text">
+            <div className={styles['project-img-wrapper']}>
+              <div className={styles['project-img-overlay']}>
+                <span className={styles['project-img-overlay-text']}>
                   Explore Code
                   <svg
                     width="14"
@@ -71,20 +72,20 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 alt={`Screenshot of ${project.title}`}
                 width={600}
                 height={400}
-                className="project-img"
+                className={styles['project-img']}
               />
             </div>
-            <div className="project-info">
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
-              <div className="project-tech">
+            <div className={styles['project-info']}>
+              <h3 className={styles['project-title']}>{project.title}</h3>
+              <p className={styles['project-desc']}>{project.description}</p>
+              <div className={styles['project-tech']}>
                 {project.tags.map((tag) => (
-                  <span key={tag} className="tech-tag">
+                  <span key={tag} className={styles['tech-tag']}>
                     {tag}
                   </span>
                 ))}
               </div>
-              <span className="project-link">
+              <span className={styles['project-link']}>
                 <svg
                   className="btn-icon"
                   width="18"

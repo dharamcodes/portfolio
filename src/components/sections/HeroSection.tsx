@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "./HeroSection.module.css";
 
 interface HeroSectionProps {
   personal: {
@@ -11,16 +12,16 @@ interface HeroSectionProps {
 
 export function HeroSection({ personal }: HeroSectionProps) {
   return (
-    <div className="container hero-content slide-inner" aria-label={`About ${personal.name}`}>
-      <div className="hero-text">
-        <div className="hero-badge">Available for new roles</div>
+    <div className={`container ${styles['hero-content']} slide-inner`} aria-label={`About ${personal.name}`}>
+      <div className={styles['hero-text']}>
+        <div className={styles['hero-badge']}>Available for new roles</div>
         <h1>
           {personal.name.split(" ")[0]}{" "}
           <span className="gradient-text">{personal.name.split(" ").slice(1).join(" ")}</span>
         </h1>
-        <p className="hero-role">Lead Engineer · Backend Systems · Distributed Architecture</p>
+        <p className={styles['hero-role']}>Lead Engineer · Backend Systems · Distributed Architecture</p>
         <p>{personal.summary}</p>
-        <div className="hero-cta-row" suppressHydrationWarning>
+        <div className={styles['hero-cta-row']} suppressHydrationWarning>
           <a href="#experience" className="btn btn-primary">View Experience</a>
           <a href="/Resume_Dharmendra.pdf" download="Resume_Dharmendra.pdf" className="btn btn-resume">
             <svg className="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -39,10 +40,10 @@ export function HeroSection({ personal }: HeroSectionProps) {
           </a>
         </div>
       </div>
-      <div className="hero-image-wrapper">
-        <div className="hero-image-glow" />
-        <Image src="/profile-light.png" alt={`${personal.name} Profile`} width={400} height={400} className="hero-image glass show-light" priority />
-        <Image src={personal.profileImage} alt={`${personal.name} Profile`} width={400} height={400} className="hero-image glass show-dark" priority />
+      <div className={styles['hero-image-wrapper']}>
+        <div className={styles['hero-image-glow']} />
+        <Image src="/profile-light.png" alt={`${personal.name} Profile`} width={400} height={400} className={`${styles['hero-image']} glass show-light`} priority />
+        <Image src={personal.profileImage} alt={`${personal.name} Profile`} width={400} height={400} className={`${styles['hero-image']} glass show-dark`} priority />
       </div>
     </div>
   );
