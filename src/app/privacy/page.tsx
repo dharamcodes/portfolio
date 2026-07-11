@@ -45,7 +45,7 @@ export default function PrivacyPolicy() {
         <hr style={{ border: "0", borderTop: "1px solid var(--glass-border)", margin: "2.5rem 0" }} />
 
         <h2 style={{ fontSize: "1.6rem", marginTop: "2rem", marginBottom: "1rem" }}>1. Data Collection & Processing</h2>
-        
+
         <h3 style={{ fontSize: "1.15rem", marginTop: "1.5rem", marginBottom: "0.5rem", color: "var(--accent-1)" }}>A. Analytics & Traffic Monitoring</h3>
         <p style={{ color: "var(--text-secondary)", lineHeight: "1.7", marginBottom: "1.25rem" }}>
           This website uses <strong>Vercel Analytics</strong> to understand visitor traffic and page performance. Vercel Analytics is privacy-friendly, cookie-less, and does not collect or store any personally identifiable information (PII). All traffic metrics are aggregated and anonymous.

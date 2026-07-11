@@ -183,6 +183,8 @@ export default function RootLayout({
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
         <link rel="canonical" href={BASE_URL} />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly Resume Summary" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full LLM CV" />
       </head>
       <body>
         <Script

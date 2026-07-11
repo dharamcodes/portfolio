@@ -2,41 +2,66 @@
 
 import { useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+import styles from "./Header.module.css";
 
 interface HeaderProps {
   name: string;
+  activeSectionId?: string;
+  onNavClick?: (index: number) => void;
 }
 
-export function Header({ name }: HeaderProps) {
+const SECTIONS = [
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
+  { id: "projects", label: "Projects" },
+  { id: "blogs", label: "Blogs" },
+  { id: "education", label: "Education" },
+  { id: "contact", label: "Contact" },
+];
+
+export function Header({ name, activeSectionId, onNavClick }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, index: number) => {
+    if (onNavClick) {
+      e.preventDefault();
+      onNavClick(index);
+    }
+    closeMenu();
+  };
+
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div className="container">
-        <div className="logo" onClick={closeMenu} style={{ cursor: "pointer" }} aria-label={`${name} portfolio homepage`}>
+        <div className={styles.logo} onClick={closeMenu} style={{ cursor: "pointer" }} aria-label={`${name} portfolio homepage`}>
           dharam<span className="gradient-text">.dev</span>
         </div>
-        
+
         {/* Desktop Navigation */}
-        <nav className="nav-links desktop-nav">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#blogs">Blogs</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+        <nav className={`${styles['nav-links']} ${styles['desktop-nav']}`} aria-label="Desktop navigation">
+          {SECTIONS.map((sec, idx) => (
+            <a
+              key={sec.id}
+              href={`#${sec.id}`}
+              className={activeSectionId === sec.id ? styles.active : ""}
+              onClick={(e) => handleNavClick(e, idx)}
+            >
+              {sec.label}
+            </a>
+          ))}
           <ThemeToggle />
         </nav>
 
         {/* Mobile Hamburger Button */}
-        <button 
-          className={`hamburger ${isOpen ? "open" : ""}`} 
+        <button
+          className={`${styles.hamburger} ${isOpen ? styles.open : ""}`}
           onClick={toggleMenu}
-          aria-label="Toggle menu"
+          aria-label={isOpen ? "Close main navigation menu" : "Open main navigation menu"}
+          aria-expanded={isOpen}
         >
           <span></span>
           <span></span>
@@ -44,16 +69,19 @@ export function Header({ name }: HeaderProps) {
         </button>
 
         {/* Mobile Navigation Overlay */}
-        <div className={`mobile-nav-overlay ${isOpen ? "active" : ""}`}>
-          <nav className="mobile-nav-links">
-            <a href="#about" onClick={closeMenu}>About</a>
-            <a href="#experience" onClick={closeMenu}>Experience</a>
-            <a href="#skills" onClick={closeMenu}>Skills</a>
-            <a href="#projects" onClick={closeMenu}>Projects</a>
-            <a href="#blogs" onClick={closeMenu}>Blogs</a>
-            <a href="#education" onClick={closeMenu}>Education</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
-            <div className="mobile-theme-toggle" onClick={closeMenu}>
+        <div className={`${styles['mobile-nav-overlay']} ${isOpen ? styles.active : ""}`} aria-hidden={!isOpen}>
+          <nav className={styles['mobile-nav-links']} aria-label="Mobile navigation">
+            {SECTIONS.map((sec, idx) => (
+              <a
+                key={sec.id}
+                href={`#${sec.id}`}
+                className={activeSectionId === sec.id ? styles.active : ""}
+                onClick={(e) => handleNavClick(e, idx)}
+              >
+                {sec.label}
+              </a>
+            ))}
+            <div className={styles['mobile-theme-toggle']} onClick={closeMenu}>
               <ThemeToggle />
             </div>
           </nav>
