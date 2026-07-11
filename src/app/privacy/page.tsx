@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
 
         <section style={{ marginBottom: "2.5rem" }}>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "var(--text-primary)" }}>
-            Welcome to the professional portfolio of <strong>{personal.name}</strong>. I respect your privacy and am committed to protecting your personal data. This privacy policy explains how data is handled when you visit my website (<a href="https://github.com/dharamcodes" className="gradient-text" style={{ fontWeight: 600, textDecoration: "none" }}>github.com/dharamcodes</a>).
+            Welcome to the professional portfolio of <strong>{personal.name}</strong>. I respect your privacy and am committed to protecting your personal data. This privacy policy explains how data is handled when you visit my website (<a href="https://dharam.dev" className="gradient-text" style={{ fontWeight: 600, textDecoration: "none" }}>dharam.dev</a>).
           </p>
         </section>
 

@@ -10,7 +10,7 @@ Dharmendra Awasthi is a Lead Engineer and Senior Software Engineer specializing 
 - **Location**: Bengaluru, Karnataka, India
 - **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
 - **LinkedIn**: [https://www.linkedin.com/in/dharamcodes/](https://www.linkedin.com/in/dharamcodes/)
-- **Website**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
+- **Website**: [https://dharam.dev](https://dharam.dev)
 
 ---
 
@@ -42,6 +42,11 @@ Senior Backend Engineer and Tech Lead with 9+ years of experience constructing h
 
 ### Observability & Monitoring
 - **Monitoring Tools**: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, Zipkin, Distributed Tracing
+
+### AI & Machine Learning
+- **Core Concepts**: Large Language Models (LLMs), Deep Learning, Machine Learning, Neural Networks
+- **Architectures & Models**: Transformers (Attention mechanisms, Positional encoding), LSTMs, Sequence-to-Sequence models
+- **Applications**: Natural Language Processing (NLP), Generative AI Integration, Content Verification pipelines
 
 ---
 

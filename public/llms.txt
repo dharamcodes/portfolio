@@ -19,10 +19,11 @@ Dharmendra Awasthi is a Senior Software Engineer, Tech Lead, and PhD researcher 
 - **Cloud & Infrastructure**: AWS (EC2, S3, SQS, Lambda, ECS, CloudWatch), Apache Kafka, PostgreSQL, MongoDB, Redis, Elasticsearch
 - **DevOps & Tools**: Docker, Kubernetes, Jenkins, Terraform, Git/GitHub, Maven, Gradle, REST APIs, gRPC, OAuth2, JWT
 - **Observability**: Prometheus, Grafana, ELK Stack, Splunk, Zipkin, Distributed Tracing
+- **AI & Machine Learning**: Large Language Models (LLMs), Deep Learning, Machine Learning, Transformers, LSTMs, NLP, Generative AI Integration
 
 ## Navigation & Contact
-- **Website**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
-- **Full Markdown CV**: [https://github.com/dharamcodes/llms-full.txt](https://github.com/dharamcodes/llms-full.txt)
+- **Website**: [https://dharam.dev](https://dharam.dev)
+- **Full Markdown CV**: [https://dharam.dev/llms-full.txt](https://dharam.dev/llms-full.txt)
 - **LinkedIn**: [https://www.linkedin.com/in/dharamcodes/](https://www.linkedin.com/in/dharamcodes/)
 - **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
 - **Email**: [er.dharamk@gmail.com](mailto:er.dharamk@gmail.com)
