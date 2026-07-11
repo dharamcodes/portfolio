@@ -1,6 +1,7 @@
 import Image from "next/image";
 import resumeData from "../data/resume.json";
 import { Header } from "../components/Header";
+import { ScrollReveal } from "../components/ScrollReveal";
 
 export default function Home() {
   const { personal, contact, skills, experience, projects, education, blogs } = resumeData;
@@ -11,8 +12,9 @@ export default function Home() {
       <div className="bg-blob-2"></div>
 
       <Header name={personal.name} />
+      <ScrollReveal />
 
-      <main itemScope itemType="https://schema.org/Person">
+      <main className="page-slide-in" itemScope itemType="https://schema.org/Person">
         {/* Hidden SEO meta content for crawlers */}
         <meta itemProp="name" content="Dharmendra Awasthi" />
         <meta itemProp="jobTitle" content="Lead Engineer / Senior Software Engineer" />
@@ -25,7 +27,7 @@ export default function Home() {
           <meta itemProp="addressCountry" content="IN" />
         </span>
 
-        <section id="about" className="hero container fade-in" aria-label={`About ${personal.name}`}>
+        <section id="about" className="hero container slide-in-left" aria-label={`About ${personal.name}`}>
           <div className="hero-content">
             <div className="hero-text">
               <h1>{personal.name.split(' ')[0]} <span className="gradient-text">{personal.name.split(' ').slice(1).join(' ')}</span></h1>
@@ -74,7 +76,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="experience" className="section container" aria-label="Professional Experience">
+        <section id="experience" className="section container scroll-reveal" aria-label="Professional Experience">
           <h2 className="section-title">Professional <span className="gradient-text">Experience</span></h2>
           <div className="experience-timeline" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             {experience.map((exp, index) => (
@@ -96,7 +98,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="skills" className="section container" aria-label="Technical Skills">
+        <section id="skills" className="section container scroll-reveal" aria-label="Technical Skills">
           <h2 className="section-title">Technical <span className="gradient-text">Arsenal</span></h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             {Object.entries(skills).map(([category, skillList], index) => (
@@ -112,11 +114,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="section container" aria-label="Featured Projects">
+        <section id="projects" className="section container scroll-reveal" aria-label="Featured Projects">
           <h2 className="section-title">Featured <span className="gradient-text">Projects</span></h2>
           <div className="projects-grid">
             {projects.map((project, index) => (
-              <div key={index} className="project-card">
+              <a key={index} href={project.url} target="_blank" rel="noopener noreferrer" className="project-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="project-img-wrapper">
                   <div className="project-img-overlay">
                     <span className="project-img-overlay-text">
@@ -137,19 +139,19 @@ export default function Home() {
                       <span key={tag} className="tech-tag">{tag}</span>
                     ))}
                   </div>
-                  <a href={project.url} className="project-link" target="_blank" rel="noopener noreferrer">
+                  <span className="project-link">
                     <svg className="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                     </svg>
                     View on GitHub
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
 
-        <section id="blogs" className="section container" aria-label="Technical Blog Publications">
+        <section id="blogs" className="section container scroll-reveal" aria-label="Technical Blog Publications">
           <h2 className="section-title">Technical <span className="gradient-text">Publications</span></h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem' }}>
             {blogs.map((blog, index) => (
@@ -176,7 +178,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="education" className="section container" aria-label="Education and Certifications">
+        <section id="education" className="section container scroll-reveal" aria-label="Education and Certifications">
           <h2 className="section-title">Education & <span className="gradient-text">Certifications</span></h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
             {education.map((edu, index) => (
@@ -189,7 +191,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="section container" style={{textAlign: 'center', maxWidth: '600px', margin: '0 auto'}} aria-label="Contact Information">
+        <section id="contact" className="section container scroll-reveal" style={{textAlign: 'center', maxWidth: '600px', margin: '0 auto'}} aria-label="Contact Information">
           <h2 className="section-title">Let&apos;s <span className="gradient-text">Connect</span></h2>
           <p style={{color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.2rem', lineHeight: '1.6'}}>
             I&apos;m currently open for new opportunities to build scalable backend systems and distributed platforms. Feel free to reach out via email or LinkedIn!

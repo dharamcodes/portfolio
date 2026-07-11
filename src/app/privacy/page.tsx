@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
         </div>
       </header>
 
-      <main className="container" style={{ paddingTop: "140px", paddingBottom: "80px", maxWidth: "800px" }}>
+      <main className="container page-slide-in" style={{ paddingTop: "140px", paddingBottom: "80px", maxWidth: "800px" }}>
         <h1 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }} className="gradient-text">Privacy Policy</h1>
         <p style={{ color: "var(--text-secondary)", marginBottom: "2.5rem" }}>
           Last Updated: June 2026

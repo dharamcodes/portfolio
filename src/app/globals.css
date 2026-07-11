@@ -54,6 +54,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;
+  overflow-x: hidden;
 }
 
 body {
@@ -436,6 +437,55 @@ h1, h2, h3 {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.page-slide-in {
+  animation: pageSlideIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes pageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scroll Reveal Classes */
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+/* Alternate entry directions for sections */
+.scroll-reveal:nth-of-type(even) {
+  transform: translateX(-80px);
+}
+.scroll-reveal:nth-of-type(odd) {
+  transform: translateX(80px);
+}
+
+/* Active in-view state */
+.scroll-reveal.in-view {
+  opacity: 1;
+  transform: translateX(0) !important;
 }
 
 /* Sections */
