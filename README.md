@@ -1,371 +1,88 @@
-# AI Portfolio Website Generator
+# Dharmendra Awasthi — Professional Portfolio
 
-A premium AI-generated developer portfolio website inspired by modern portfolio experiences like dharam.dev, Dhaval.dev, and other high-end developer showcases.
-
----
-
-# ✨ Features
-
-- AI-generated personalized portfolio website
-- Dynamic content generation
-- Fully responsive
-- SEO optimized
-- Dark/Light mode
-- GitHub integration
-- Vercel deployment ready
-- Recruiter-friendly layout
-- Fast loading architecture
+A premium, modern developer portfolio website for Dharmendra Awasthi (Tech Lead / Lead Engineer). Built with **Next.js 16**, **React 19**, and **Vanilla CSS** to deliver high-performance static pages, custom transitions, and deep integration with search engines and LLM search agents.
 
 ---
 
-# 🧠 Inspiration
+## 🚀 Tech Stack
 
-The website should feel inspired by premium developer portfolios such as:
-
-- https://www.dharam.dev/
-
-These portfolios typically use:
-- smooth scrolling
-- modern dark themes
-- motion-rich interactions
-- polished project showcases
-- strong developer branding
-- interactive UI elements
-- minimalistic layouts
-- animated hero sections
+- **Framework**: Next.js 16 (App Router, Static HTML Export)
+- **UI & Logic**: React 19, TypeScript
+- **Styling**: Vanilla CSS (Custom properties, modern flex/grid grids, Glassmorphic overlays)
+- **State & Theme**: `next-themes` (Dark/Light mode support)
+- **Analytics**: Vercel Web Analytics
+- **Crawl Observability**: Programmatic Robots & Sitemap compilers
 
 ---
 
-# 🚀 AI Prompt
+## ✨ Features & Optimizations
+
+### 1. Dynamic Content Pipeline
+All website sections, SEO metadata, and structured schemas are driven dynamically from a single source of truth: [`src/data/resume.json`](file:///Users/dharam.dev/devspace/portfolio/src/data/resume.json). Modifying this JSON immediately compiles updates across the home page, privacy policy page, metadata headers, sitemaps, and LLM text targets.
+
+### 2. Large Language Model & AI Search Ingestion (LLMO / GEO)
+Optimized to ensure AI search engines (like Gemini, Perplexity, and ChatGPT Search) parse and represent Dharmendra's profile with high accuracy:
+- **`llms.txt` & `llms-full.txt`**: Serves structured markdown-encoded versions of the resume directly at the root (`/llms.txt`, `/llms-full.txt`).
+- **Dynamic Schema.org `@graph`**: Generates nested JSON-LD linked schemas for the `Person` profile. The graph maps education history, skills, featured projects (as `SoftwareSourceCode` items), and publications (as `BlogPosting` items) so crawlers index them semantically.
+- **AI Crawler Directives**: Programmatic [`robots.ts`](file:///Users/dharam.dev/devspace/portfolio/src/app/robots.ts) explicitly configures rules allowing AI crawlers (`GPTBot`, `ClaudeBot`, `PerplexityBot`, etc.) direct access to the structured markdown files.
+
+### 3. Hydration-Safe Transitions & Animations
+- **Alternating Scroll Reveals**: Uses a client-side [`ScrollReveal.tsx`](file:///Users/dharam.dev/devspace/portfolio/src/components/ScrollReveal.tsx) component wrapper with an `IntersectionObserver` to trigger alternating left/right slide-in CSS transitions as sections scroll into view.
+- **Horizontal Page Transitions**: Injects a custom `.page-slide-in` CSS animation to translate content from the side on layout mounts.
+- **Hydration Mismatch Mitigation**: Extracted critical SVG positioning and layout typography inline styles to static stylesheet class rules in [`globals.css`](file:///Users/dharam.dev/devspace/portfolio/src/app/globals.css). This prevents third-party dark mode or translator browser extensions (e.g. *Dark Reader*) from modifying inline style attributes before mounting, ensuring zero-warning React console logs.
+
+### 4. Interactive UI Elements
+- **Card-level Interactivity**: Project showcases are compiled as active clickable card anchors. Hovering displays code exploration overlays and clicking anywhere on the card navigates directly to the project's repository.
+- **Light/Dark Mode**: High-contrast, accessibility-audited color profiles mapped via CSS variables.
+
+---
+
+## 📦 Directory Structure
 
 ```txt
-Create a premium modern developer portfolio website inspired by sites like dharam.dev.
+├── public/                  # Static assets (images, PDFs, LLM markdown assets)
+│   ├── llms.txt             # High-level resume markdown for LLMs
+│   ├── llms-full.txt        # Full work experience resume markdown for LLMs
+│   └── Resume_Dharmendra.pdf
+├── src/
+│   ├── app/                 # Next.js App Router
+│   │   ├── globals.css      # Design tokens, variables, and animations
+│   │   ├── layout.tsx       # Root layout compiling dynamic metadata & JSON-LD
+│   │   ├── page.tsx         # Home view rendering components from resume.json
+│   │   ├── privacy/         # Privacy Policy page
+│   │   ├── robots.ts        # Programmatic robots.txt generator (force-static)
+│   │   └── sitemap.ts       # Programmatic sitemap.xml generator (force-static)
+│   ├── components/          # Shared components (Header, Theme toggle)
+│   └── data/
+│       └── resume.json      # Single source of truth database
+├── package.json
+└── next.config.ts           # Configured for static HTML exports
+```
 
-IMPORTANT:
-Before generating the website:
-1. Ask the user to upload their resume (PDF/DOCX).
-2. Parse the resume and automatically extract:
-   - Name
-   - Role/Title
-   - Bio
-   - Experience
-   - Skills
-   - Projects
-   - Education
-   - Certifications
-   - Social links
-   - Contact details
-3. Use the extracted information to dynamically generate personalized website content.
-4. Improve wording, grammar, and presentation to make the portfolio look professional and recruiter-friendly.
-5. Create realistic project showcase sections from resume experience if projects are missing.
+---
 
-Tech Stack:
-- Next.js 15 (App Router)
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Shadcn UI
-- Lucide React
-- Vercel deployment ready
+## 🛠 Local Development
 
-Design Style:
-- Dark futuristic aesthetic
-- Minimal but premium
-- Smooth animations
-- Apple + Linear + Vercel inspired UI
-- Glassmorphism cards
-- Gradient highlights
-- Fully responsive
-- Smooth scrolling
-- Premium typography
-
-Pages / Sections:
-
-1. Hero Section
-- Large animated headline
-- User’s name and role from resume
-- Typing effect
-- CTA buttons:
-  - View Projects
-  - Download Resume
-  - Contact Me
-- Social icons
-- Animated background grid/glow effect
-
-2. About Section
-- Personalized bio from resume
-- Career summary
-- Experience highlights
-- Current interests
-- Profile image placeholder
-
-3. Skills Section
-Auto-generate categorized skills from resume.
-
-Categories:
-- Frontend
-- Backend
-- Cloud & DevOps
-- Databases
-- AI/ML
-- Tools
-
-Display animated skill cards with hover effects.
-
-4. Experience Timeline
-Create animated vertical timeline from resume experience:
-- Company
-- Role
-- Duration
-- Achievements
-- Tech stack
-
-5. Projects Section
-Generate premium project showcase cards using resume projects and experience.
-
-Each card should contain:
-- Project title
-- Description
-- Tech stack
-- GitHub link
-- Live demo
-- Hover animation
-- Spotlight effect
-
-6. GitHub Stats Section
-Include:
-- contribution graph
-- streak stats
-- top languages
-
-7. Testimonials Section
-Generate professional placeholder testimonials if not provided.
-
-8. Contact Section
-Modern contact form with:
-- name
-- email
-- message
-
-9. Footer
-- Quick links
-- Social icons
-- Copyright
-
-Animations:
-- Framer Motion
-- Fade-in animations
-- Stagger effects
-- Hover glow effects
-- Magnetic buttons
-- Scroll progress bar
-- Smooth page transitions
-
-Advanced Features:
-- Dark/light mode
-- Sticky navbar
-- Active section highlighting
-- SEO optimization
-- Accessibility support
-- Fast loading
-- Mobile-first
-- Clean reusable architecture
-- Dynamic metadata
-- OpenGraph support
-- Sitemap generation
-- Command palette (optional)
-- Loading animation
-- Custom cursor effect
-
-Color Palette:
-- Background: #0B0F19
-- Primary: #7C3AED
-- Accent: #06B6D4
-- Text: #E5E7EB
-- Muted: #9CA3AF
-
-Typography:
-- Inter
-- Space Grotesk
-
-Folder Structure:
-- app/
-- components/
-- sections/
-- lib/
-- data/
-- public/
-- styles/
-
-Code Quality:
-- Modular reusable components
-- Clean architecture
-- Type-safe
-- Production-ready
-- Optimized performance
-- Use server components where applicable
-
-Deployment:
-After generating the project, also generate:
-1. README.md with setup instructions
-2. Environment variable guide
-3. Vercel deployment steps
-4. GitHub push commands
-5. Build optimization notes
-
-Add a dedicated section called:
-"Deploy to Vercel"
-
-Include exact commands:
-
+```bash
+# Install dependencies
 npm install
+
+# Run hot-reloading development server
 npm run dev
 
-GitHub setup:
-
-git init
-git add .
-git commit -m "Initial portfolio website"
-git branch -M main
-git remote add origin <github_repo_url>
-git push -u origin main
-
-Vercel deployment instructions:
-1. Push code to GitHub
-2. Open https://vercel.com
-3. Import GitHub repository
-4. Configure environment variables if needed
-5. Click Deploy
-6. Use generated production URL
-
-Optional CLI deployment:
-
-npm install -g vercel
-vercel
-
-Generate:
-- complete production-ready code
-- responsive UI
-- deployment-ready configuration
-- polished animations
-- realistic placeholder assets
-- SEO metadata
-- favicon setup
-- optimized performance configuration
-
-The final website should feel like a premium Silicon Valley engineer portfolio from 2026.
+# Run static HTML compilation export (outputs to /out)
+npm run build
 ```
 
 ---
 
-# 🛠 Recommended Stack
+## 🌐 Deployment to GitHub Pages / Vercel
 
-| Technology | Purpose |
-|---|---|
-| Next.js 15 | Framework |
-| React | UI |
-| Tailwind CSS | Styling |
-| Framer Motion | Animations |
-| TypeScript | Type Safety |
-| Shadcn UI | Components |
-| Lucide React | Icons |
-| Vercel | Deployment |
+The build pipeline compiles to static files (`output: 'export'`) under `/out`.
 
----
-
-# 🎨 UI/UX Guidelines
-
-The portfolio should prioritize:
-- elegant animations
-- fast loading
-- recruiter readability
-- responsive layouts
-- immersive interactions
-- clean typography
-- project visibility
-- premium feel
-
----
-
-# 📦 Local Development
-
+### Build configuration
+Set your target deployment URL by specifying the `NEXT_PUBLIC_SITE_URL` build-time environment variable:
 ```bash
-npm install
-npm run dev
+NEXT_PUBLIC_SITE_URL=https://dharam.dev npm run build
 ```
-
----
-
-# 🔥 Deploy to Vercel
-
-## Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio website"
-git branch -M main
-git remote add origin <github_repo_url>
-git push -u origin main
-```
-
-## Deploy using Vercel Dashboard
-
-1. Open https://vercel.com
-2. Import GitHub repository
-3. Configure environment variables
-4. Click Deploy
-5. Use generated production URL
-
-## Optional CLI Deployment
-
-```bash
-npm install -g vercel
-vercel
-```
-
----
-
-# 📈 SEO Recommendations
-
-- Add OpenGraph metadata
-- Use dynamic metadata generation
-- Optimize Lighthouse score
-- Generate sitemap.xml
-- Use semantic HTML
-- Optimize images
-- Use lazy loading
-- Add structured schema data
-
----
-
-# ⚡ Performance Tips
-
-- Use Next.js App Router
-- Optimize images using next/image
-- Use server components
-- Lazy-load animations
-- Avoid unnecessary re-renders
-- Minimize JS bundle size
-- Use dynamic imports
-
----
-
-# 💡 Portfolio Design Insights
-
-High-quality developer portfolios usually:
-- focus on storytelling
-- showcase impactful projects
-- keep navigation simple
-- avoid clutter
-- prioritize smooth interactions
-- maintain strong typography hierarchy
-- use subtle animations instead of excessive effects
-
----
-
-# 🌐 Useful References
-
-- https://www.dharam.dev/
-- https://www.linkedin.com/in/dharamcodes/
+This ensures sitemap URLs, robots rules, canonical tags, and OpenGraph images resolve with absolute URLs.

@@ -221,6 +221,20 @@
   ],
   "blogs": [
     {
+      "title": "The Midnight Epiphany: How We Replaced the Recurrent Loop",
+      "url": "https://medium.com/wiredcoder-pub/the-midnight-epiphany-how-we-replaced-the-recurrent-loop-9adfbda747a3",
+      "date": "Nov 1, 2023",
+      "readingTime": "4 min read",
+      "summary": "It was 2:14 AM on a rainy Tuesday, and Leo was staring at a terminal screen that had been frozen for three hours. He was trying to train a sequence-to-sequence LSTM model on a massive corpus of legal texts. The progress bar crawled like a snail on a cold sidewalk."
+    },
+    {
+      "title": "The Model with Spatial Amnesia",
+      "url": "https://medium.com/wiredcoder-pub/the-model-with-spatial-amnesia-b83f668498a2",
+      "date": "Nov 1, 2023",
+      "readingTime": "7 min read",
+      "summary": "Imagine waking up in a room with a group of people. You can hear everyone speaking, and you understand what they are saying, but you have no idea who spoke first, who spoke second, or where anyone is standing. To you, the conversation is just a cloud of words."
+    },
+    {
       "title": "Linear Algebra : System of Linear equation and",
       "url": "https://medium.com/ml-from-first-principles/linear-algebra-system-of-linear-equation-and-18c847de7b0d",
       "date": "Mar 22, 2026",
@@ -261,20 +275,6 @@
       "date": "Nov 1, 2023",
       "readingTime": "5 min read",
       "summary": "At its core, Tomcat is a servlet container and a web server combined. It’s capable of serving web applications by implementing the Java Servlet and JSP specifications."
-    },
-    {
-      "title": "The Midnight Epiphany: How We Replaced the Recurrent Loop",
-      "url": "https://medium.com/wiredcoder-pub/the-midnight-epiphany-how-we-replaced-the-recurrent-loop-9adfbda747a3",
-      "date": "Nov 1, 2023",
-      "readingTime": "4 min read",
-      "summary": "It was 2:14 AM on a rainy Tuesday, and Leo was staring at a terminal screen that had been frozen for three hours. He was trying to train a sequence-to-sequence LSTM model on a massive corpus of legal texts. The progress bar crawled like a snail on a cold sidewalk."
-    },
-    {
-      "title": "The Model with Spatial Amnesia",
-      "url": "https://medium.com/wiredcoder-pub/the-model-with-spatial-amnesia-b83f668498a2",
-      "date": "Nov 1, 2023",
-      "readingTime": "7 min read",
-      "summary": "Imagine waking up in a room with a group of people. You can hear everyone speaking, and you understand what they are saying, but you have no idea who spoke first, who spoke second, or where anyone is standing. To you, the conversation is just a cloud of words."
     }
   ]
 }
