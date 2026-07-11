@@ -1,5 +1,5 @@
 import Link from "next/link";
-import resumeData from "../../data/resume.json";
+import resumeData from "@/data/resume.json";
 
 export const metadata = {
   title: "Privacy Policy | Dharmendra Awasthi",
@@ -19,12 +19,12 @@ export default function PrivacyPolicy() {
 
       <header className="header">
         <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <Link href="/" style={{ textDecoration: "none" }} prefetch={false}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <div className="logo" style={{ cursor: "pointer" }} aria-label={`${personal.name} portfolio homepage`}>
               dharam<span className="gradient-text">.dev</span>
             </div>
           </Link>
-          <Link href="/" className="btn btn-secondary" style={{ padding: "0.5rem 1.5rem", fontSize: "0.85rem", textDecoration: "none" }} prefetch={false}>
+          <Link href="/" className="btn btn-secondary" style={{ padding: "0.5rem 1.5rem", fontSize: "0.85rem", textDecoration: "none" }}>
             ← Back to Home
           </Link>
         </div>

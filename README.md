@@ -27,9 +27,9 @@ Optimized to ensure AI search engines (like Gemini, Perplexity, and ChatGPT Sear
 - **AI Crawler Directives**: Programmatic [`robots.ts`](file:///Users/dharam.dev/devspace/portfolio/src/app/robots.ts) explicitly configures rules allowing AI crawlers (`GPTBot`, `ClaudeBot`, `PerplexityBot`, etc.) direct access to the structured markdown files.
 
 ### 3. Hydration-Safe Transitions & Animations
-- **Alternating Scroll Reveals**: Uses a client-side [`ScrollReveal.tsx`](file:///Users/dharam.dev/devspace/portfolio/src/components/ScrollReveal.tsx) component wrapper with an `IntersectionObserver` to trigger alternating left/right slide-in CSS transitions as sections scroll into view.
+- **Fullpage Horizontal Slider**: Uses a custom client-side [`FullPageScroller`](file:///Users/dharam.dev/devspace/portfolio/src/components/layout/FullPageScroller/FullPageScroller.tsx) layout with wheel, touch, and hash navigation to slide sections horizontally with smooth transitions.
 - **Horizontal Page Transitions**: Injects a custom `.page-slide-in` CSS animation to translate content from the side on layout mounts.
-- **Hydration Mismatch Mitigation**: Extracted critical SVG positioning and layout typography inline styles to static stylesheet class rules in [`globals.css`](file:///Users/dharam.dev/devspace/portfolio/src/app/globals.css). This prevents third-party dark mode or translator browser extensions (e.g. *Dark Reader*) from modifying inline style attributes before mounting, ensuring zero-warning React console logs.
+- **Hydration Mismatch Mitigation**: Extracted critical layout styles and component transitions into localized CSS modules (e.g. `FullPageScroller.module.css`, `Pagination.module.css`), ensuring zero-warning React console logs and hydration safety.
 
 ### 4. Interactive UI Elements
 - **Card-level Interactivity**: Project showcases are compiled as active clickable card anchors. Hovering displays code exploration overlays and clicking anywhere on the card navigates directly to the project's repository.
@@ -46,13 +46,18 @@ Optimized to ensure AI search engines (like Gemini, Perplexity, and ChatGPT Sear
 │   └── Resume_Dharmendra.pdf
 ├── src/
 │   ├── app/                 # Next.js App Router
-│   │   ├── globals.css      # Design tokens, variables, and animations
+│   │   ├── globals.css      # Base styling and design tokens
 │   │   ├── layout.tsx       # Root layout compiling dynamic metadata & JSON-LD
 │   │   ├── page.tsx         # Home view rendering components from resume.json
 │   │   ├── privacy/         # Privacy Policy page
 │   │   ├── robots.ts        # Programmatic robots.txt generator (force-static)
 │   │   └── sitemap.ts       # Programmatic sitemap.xml generator (force-static)
-│   ├── components/          # Shared components (Header, Theme toggle)
+│   ├── components/          # Reusable components organized in tiers
+│   │   ├── layout/          # Layout containers (FullPageScroller, Header)
+│   │   ├── providers/       # Theme and context providers (ThemeProvider)
+│   │   ├── ui/              # Low-level user interface elements (Pagination, ThemeToggle)
+│   │   ├── sections/        # Section-specific components (Hero, Experience, Skills, etc.)
+│   │   └── index.ts         # Central layout/ui component exports
 │   └── data/
 │       └── resume.json      # Single source of truth database
 ├── package.json
