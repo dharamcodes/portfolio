@@ -14,12 +14,14 @@ Dharmendra Awasthi is a Senior Software Engineer, Tech Lead, and PhD researcher 
 - Distributed Systems & Microservices Architect
 
 ## Technical Arsenal
-- **Languages & Frameworks**: Java, Python, SQL, Bash, Spring Boot, Spring Cloud, Hibernate, JUnit, Mockito
-- **Architecture & Design**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Domain-Driven Design (DDD), System Design (HLD/LLD)
+- **Programming Languages**: Java, Python, SQL, Bash
+- **Frameworks & Libraries**: Spring Boot, Spring Cloud, Hibernate, JUnit, Mockito
+- **Architecture & Design**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Circuit Breakers, Domain-Driven Design (DDD)
 - **Cloud & Infrastructure**: AWS (EC2, S3, SQS, Lambda, ECS, CloudWatch), Apache Kafka, PostgreSQL, MongoDB, Redis, Elasticsearch
-- **DevOps & Tools**: Docker, Kubernetes, Jenkins, Terraform, Git/GitHub, Maven, Gradle, REST APIs, gRPC, OAuth2, JWT
-- **Observability**: Prometheus, Grafana, ELK Stack, Splunk, Zipkin, Distributed Tracing
+- **DevOps & Automation**: Docker, Kubernetes, Jenkins, Terraform, Git/GitHub, Maven, Gradle, REST APIs, gRPC, OAuth2, JWT
+- **Observability & Monitoring**: Prometheus, Grafana, ELK Stack, Splunk, Zipkin, Distributed Tracing
 - **AI & Machine Learning**: Large Language Models (LLMs), Deep Learning, Machine Learning, Transformers, LSTMs, NLP, Generative AI Integration
+- **Engineering Practices**: System Design (HLD/LLD), Performance Tuning, Capacity Planning, CI/CD, Agile/Scrum, TDD
 
 ## Navigation & Contact
 - **Website**: [https://dharam.dev](https://dharam.dev)

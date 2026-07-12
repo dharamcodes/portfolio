@@ -100,9 +100,14 @@
 }
 
 /* Category dot colors & glows */
-.skill-badge-card[data-category="Languages & Frameworks"] .category-dot {
+.skill-badge-card[data-category="Programming Languages"] .category-dot {
   background: #0ea5e9;
   box-shadow: 0 0 8px rgba(14, 165, 233, 0.6);
+}
+
+.skill-badge-card[data-category="Frameworks & Libraries"] .category-dot {
+  background: #06b6d4;
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
 }
 
 .skill-badge-card[data-category="Architecture & Design"] .category-dot {
@@ -115,12 +120,12 @@
   box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
 }
 
-.skill-badge-card[data-category="DevOps & Tools"] .category-dot {
+.skill-badge-card[data-category="DevOps & Automation"] .category-dot {
   background: #10b981;
   box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
 }
 
-.skill-badge-card[data-category="Observability"] .category-dot {
+.skill-badge-card[data-category="Observability & Monitoring"] .category-dot {
   background: #f43f5e;
   box-shadow: 0 0 8px rgba(244, 63, 94, 0.6);
 }
@@ -130,7 +135,7 @@
   box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
 }
 
-.skill-badge-card[data-category="Practices"] .category-dot {
+.skill-badge-card[data-category="Engineering Practices"] .category-dot {
   background: #14b8a6;
   box-shadow: 0 0 8px rgba(20, 184, 166, 0.6);
 }

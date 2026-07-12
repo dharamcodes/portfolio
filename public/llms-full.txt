@@ -21,24 +21,25 @@ Senior Backend Engineer and Tech Lead with 9+ years of experience constructing h
 
 ## Technical Skills & Expertise
 
-### Languages & Frameworks
+### Programming Languages
 - **Languages**: Java (8/11/17+), Python, SQL (PostgreSQL, MySQL), Bash Scripting
+
+### Frameworks & Libraries
 - **Frameworks**: Spring Boot, Spring Cloud, Hibernate ORM, JPA, Reactive Streams
-- **Testing**: JUnit, Mockito, Testcontainers, TDD (Test-Driven Development)
+- **Libraries & Testing**: JUnit, Mockito, Testcontainers
 
-### Architecture & System Design
+### Architecture & Design
 - **Architectural Patterns**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Outbox Pattern, Circuit Breakers, Domain-Driven Design (DDD)
-- **Systems Design**: HLD (High-Level Design), LLD (Low-Level Design), Performance Tuning, Latency Optimization, Capacity Planning
 
-### Cloud & Messaging Infrastructure
+### Cloud & Infrastructure
 - **Message Brokers**: Apache Kafka (Leader-Worker patterns, consumer groups, partition management)
 - **Cloud Computing**: Amazon Web Services (AWS) - EC2, S3, SQS, Lambda, ECS, CloudWatch, IAM
 - **Databases & Caches**: PostgreSQL, MongoDB, Redis (Caching, Session management), Elasticsearch
 
-### DevOps, Tools & Infrastructure
+### DevOps & Automation
 - **Containerization**: Docker, Kubernetes (K8s)
-- **CI/CD & Builds**: Jenkins, GitLab CI, GitHub Actions, Terraform (IaC), Maven, Gradle
-- **APIs**: REST APIs, gRPC, OAuth2, JSON Web Tokens (JWT)
+- **CI/CD & IaC**: Jenkins, GitLab CI, GitHub Actions, Terraform (IaC), Maven, Gradle
+- **APIs & Auth**: REST APIs, gRPC, OAuth2, JSON Web Tokens (JWT)
 
 ### Observability & Monitoring
 - **Monitoring Tools**: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, Zipkin, Distributed Tracing
@@ -47,6 +48,11 @@ Senior Backend Engineer and Tech Lead with 9+ years of experience constructing h
 - **Core Concepts**: Large Language Models (LLMs), Deep Learning, Machine Learning, Neural Networks
 - **Architectures & Models**: Transformers (Attention mechanisms, Positional encoding), LSTMs, Sequence-to-Sequence models
 - **Applications**: Natural Language Processing (NLP), Generative AI Integration, Content Verification pipelines
+
+### Engineering Practices
+- **Design & Execution**: HLD (High-Level Design), LLD (Low-Level Design), System Design
+- **Optimization**: Performance Tuning, Latency Optimization, Capacity Planning
+- **Methodology & Quality**: TDD (Test-Driven Development), CI/CD, Agile/Scrum
 
 ---
 

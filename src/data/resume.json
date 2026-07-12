@@ -13,11 +13,13 @@
     "github": "https://github.com/dharamcodes"
   },
   "skills": {
-    "Languages & Frameworks": [
+    "Programming Languages": [
       "Java",
       "Python",
       "SQL",
-      "Bash",
+      "Bash"
+    ],
+    "Frameworks & Libraries": [
       "Spring Boot",
       "Spring Cloud",
       "Hibernate",
@@ -40,7 +42,7 @@
       "Redis",
       "Elasticsearch"
     ],
-    "DevOps & Tools": [
+    "DevOps & Automation": [
       "Docker",
       "Kubernetes",
       "Jenkins",
@@ -54,7 +56,7 @@
       "OAuth2",
       "JWT"
     ],
-    "Observability": [
+    "Observability & Monitoring": [
       "Zipkin",
       "Prometheus",
       "Grafana",
@@ -70,7 +72,7 @@
       "Natural Language Processing (NLP)",
       "Generative AI Integration"
     ],
-    "Practices": [
+    "Engineering Practices": [
       "System Design (HLD/LLD)",
       "Performance Tuning",
       "Capacity Planning",
