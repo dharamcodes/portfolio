@@ -68,18 +68,6 @@
 
 @media (max-width: 768px) {
   .fancyPagination {
-    margin-top: 1.25rem;
-    gap: 0.5rem;
-  }
-
-  .paginationArrow {
-    width: 32px;
-    height: 32px;
-  }
-
-  .paginationDotBtn {
-    width: 28px;
-    height: 28px;
-    font-size: 0.76rem;
+    display: none !important;
   }
 }

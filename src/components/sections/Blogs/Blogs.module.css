@@ -187,3 +187,9 @@
       margin-top: 0.5rem;
     }
 }
+
+@media (min-width: 769px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+}

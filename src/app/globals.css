@@ -747,13 +747,16 @@ h3 {
 
   /* ── GLOBAL FOOTER ── */
   .footer {
-    position: static;
-    margin-top: 2rem;
-    padding: 1.5rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 0.5rem 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-top: 1px solid var(--glass-border);
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
   }
 
   .footer .container {
@@ -761,14 +764,19 @@ h3 {
   }
 
   .footer-text {
-    font-size: 0.78rem;
+    font-size: 0.74rem;
   }
 
   .footer-link {
-    font-size: 0.78rem;
+    font-size: 0.74rem;
   }
 
-
+  .scrollable-content {
+    max-height: 48vh;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 /* ─── Pagination Grid Fade Transition ─── */
@@ -812,6 +820,25 @@ h3 {
   .section-title {
     font-size: 1.85rem;
     margin-bottom: 2.5rem;
+  }
+}
+
+/* Desktop and Mobile layout tree togglers */
+@media (max-width: 768px) {
+  .desktop-only-wrapper {
+    display: none !important;
+  }
+  .mobile-only-wrapper {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-only-wrapper {
+    display: block !important;
+  }
+  .mobile-only-wrapper {
+    display: none !important;
   }
 }
 

@@ -23,7 +23,7 @@ const SECTIONS = [
 export function Header({ name, activeSectionId, onNavClick }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, index: number) => {

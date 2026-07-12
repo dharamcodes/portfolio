@@ -121,45 +121,23 @@
 }
 
 @media (max-width: 768px) {
-  .slideDots,
-  .slideProgressBar {
+  .slideDots {
     display: none;
   }
 
-  .fullpageContainer {
-    position: static;
-    width: 100%;
-    height: auto;
-    clip-path: none;
-    overflow: visible;
+  .slideProgressBar {
+    display: block !important;
+    top: 0;
+    bottom: auto;
+    height: 3px;
+    z-index: 201;
   }
 
-  .fullpageSlide,
-  .slideLeft,
-  .slideRight,
-  .slideActive {
-    position: static;
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    transform: none !important;
-    transition: none !important;
-    visibility: visible !important;
-    pointer-events: auto;
-    z-index: auto;
-    display: block;
-    padding: 68px 0 2rem;
-    overflow: visible;
-    border-bottom: 1px solid var(--glass-border);
-  }
-
-  .fullpageSlide:last-of-type {
-    border-bottom: none;
-  }
-
-  /* Hero slide gets extra space on mobile */
-  .fullpageSlide.hero {
-    padding-bottom: 2.5rem;
+  .fullpageSlide {
+    padding-top: 56px;
+    padding-bottom: 42px;
+    transition: transform 0.52s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.52s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .slideInner {

@@ -17,22 +17,28 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const isTransitioning = useRef(false);
-  const touchStart = useRef(0);
+  const touchStartX = useRef(0);
+  const touchStartY = useRef(0);
   const lastScrollTime = useRef(0);
   const lastDeltaY = useRef(0);
+
+  const activeIndexRef = useRef(activeIndex);
+  useEffect(() => {
+    activeIndexRef.current = activeIndex;
+  }, [activeIndex]);
 
   useEffect(() => {
     const handleHash = () => {
       const hash = window.location.hash.replace("#", "");
       const idx = SECTION_IDS.indexOf(hash);
-      if (idx !== -1 && idx !== activeIndex) {
+      if (idx !== -1 && idx !== activeIndexRef.current) {
         setActiveIndex(idx);
       }
     };
     window.addEventListener("hashchange", handleHash);
     handleHash();
     return () => window.removeEventListener("hashchange", handleHash);
-  }, [activeIndex]);
+  }, []);
 
   const navigate = useCallback((newIndex: number) => {
     if (isTransitioning.current) return;
@@ -55,8 +61,6 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
-      if (window.innerWidth <= 768) return;
-
       const target = e.target as HTMLElement;
       const scrollable = target.closest(".scrollable-content") as HTMLElement | null;
       if (scrollable) {
@@ -98,58 +102,40 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
 
   useEffect(() => {
     const handleTouchStart = (e: TouchEvent) => {
-      touchStart.current = e.touches[0].clientY;
+      touchStartX.current = e.touches[0].clientX;
+      touchStartY.current = e.touches[0].clientY;
     };
     const handleTouchEnd = (e: TouchEvent) => {
-      if (window.innerWidth <= 768) return;
-
       const target = e.target as HTMLElement;
+      const diffX = touchStartX.current - e.changedTouches[0].clientX;
+      const diffY = touchStartY.current - e.changedTouches[0].clientY;
+
       const scrollable = target.closest(".scrollable-content") as HTMLElement | null;
-      if (scrollable && scrollable.scrollHeight > scrollable.clientHeight) return;
-      const diff = touchStart.current - e.changedTouches[0].clientY;
-      if (Math.abs(diff) > 50) navigate(diff > 0 ? activeIndex + 1 : activeIndex - 1);
+
+      // 1. Horizontal swipe gesture (tab change feel)
+      if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+        navigate(diffX > 0 ? activeIndex + 1 : activeIndex - 1);
+      }
+      // 2. Vertical swipe gesture (scroll boundary safe)
+      else if (Math.abs(diffY) > 50) {
+        if (scrollable) {
+          if (scrollable.scrollHeight > scrollable.clientHeight) {
+            // Allow vertical scroll inside scrollable list card
+            if (diffY > 0 && scrollable.scrollHeight - scrollable.scrollTop > scrollable.clientHeight + 10) return;
+            if (diffY < 0 && scrollable.scrollTop > 10) return;
+          }
+        }
+        navigate(diffY > 0 ? activeIndex + 1 : activeIndex - 1);
+      }
     };
-    window.addEventListener("touchstart", handleTouchStart);
-    window.addEventListener("touchend", handleTouchEnd);
+
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
     return () => {
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchend", handleTouchEnd);
     };
   }, [activeIndex, navigate]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-      if (window.innerWidth > 768) return;
-      if (isTransitioning.current) return;
-
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          const idx = SECTION_IDS.indexOf(id);
-          if (idx !== -1) {
-            setActiveIndex(idx);
-          }
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      root: null,
-      rootMargin: "-25% 0px -45% 0px",
-      threshold: 0,
-    });
-
-    SECTION_IDS.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   const getSlideClass = (index: number) => {
     if (index === activeIndex) return styles.slideActive;
@@ -195,9 +181,8 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
       />
 
       <main className={styles.fullpageContainer} itemScope itemType="https://schema.org/Person">
-        <meta itemProp="name" content="Dharmendra Awasthi" />
+        <meta itemProp="name" content={name} />
         <meta itemProp="jobTitle" content="Lead Engineer / Senior Software Engineer" />
-        <meta itemProp="email" content="er.dharamk@gmail.com" />
         <meta itemProp="url" content="https://dharam.dev" />
         <span
           itemProp="address"

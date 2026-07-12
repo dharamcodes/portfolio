@@ -177,13 +177,29 @@
 
 
 @media (max-width: 768px) {
-    /* ── PROJECTS — single column ── */
+    /* ── PROJECTS — horizontal swipe ── */
     .projects-grid {
-      grid-template-columns: 1fr;
-      gap: 1rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      gap: 0.75rem;
+      padding-bottom: 0.5rem;
+      scrollbar-width: none;
+      mask-image: linear-gradient(to right, black 85%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+      width: 100%;
+    }
+    .projects-grid::-webkit-scrollbar {
+      display: none;
+    }
+    .project-card {
+      flex: 0 0 280px;
+      height: auto;
     }
     .project-img-wrapper {
-      height: 170px;
+      height: 150px;
     }
     .project-info {
       padding: 1.1rem;
@@ -208,4 +224,10 @@
     .project-link {
       font-size: 0.84rem;
     }
+}
+
+@media (min-width: 769px) {
+  .desktop-hidden {
+    display: none !important;
+  }
 }

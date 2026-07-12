@@ -1,5 +1,5 @@
 import resumeData from "@/data/resume.json";
-import { FullPageScroller } from "@/components";
+import { FullPageScroller, MuiMobileApp } from "@/components";
 import {
   HeroSection,
   ExperienceSection,
@@ -14,27 +14,42 @@ export default function Home() {
   const { personal, contact, skills, experience, projects, education, blogs } = resumeData;
   
   return (
-    <FullPageScroller name={personal.name}>
-      {/* ── ABOUT ── */}
-      <HeroSection personal={personal} />
+    <>
+      <div className="desktop-only-wrapper">
+        <FullPageScroller name={personal.name}>
+          {/* ── ABOUT ── */}
+          <HeroSection personal={personal} />
 
-      {/* ── EXPERIENCE ── */}
-      <ExperienceSection experience={experience} />
+          {/* ── EXPERIENCE ── */}
+          <ExperienceSection experience={experience} />
 
-      {/* ── SKILLS ── */}
-      <SkillsSection skills={skills} />
+          {/* ── SKILLS ── */}
+          <SkillsSection skills={skills} />
 
-      {/* ── PROJECTS ── */}
-      <ProjectsSection projects={projects} />
+          {/* ── PROJECTS ── */}
+          <ProjectsSection projects={projects} />
 
-      {/* ── BLOGS ── */}
-      <BlogsSection blogs={blogs} />
+          {/* ── BLOGS ── */}
+          <BlogsSection blogs={blogs} />
 
-      {/* ── EDUCATION ── */}
-      <EducationSection education={education} />
+          {/* ── EDUCATION ── */}
+          <EducationSection education={education} />
 
-      {/* ── CONTACT ── */}
-      <ContactSection contact={contact} />
-    </FullPageScroller>
+          {/* ── CONTACT ── */}
+          <ContactSection contact={contact} />
+        </FullPageScroller>
+      </div>
+      <div className="mobile-only-wrapper">
+        <MuiMobileApp
+          personalInfo={personal}
+          contactInfo={contact}
+          experience={experience}
+          skills={skills}
+          projects={projects}
+          blogs={blogs}
+          education={education}
+        />
+      </div>
+    </>
   );
 }
