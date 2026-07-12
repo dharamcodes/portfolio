@@ -3,7 +3,7 @@
 > Lead Engineer, Senior Software Engineer, and Software Developer with 9+ years of experience specializing in Java, Spring Boot, Apache Kafka, AWS, and Microservices Architecture.
 
 ## Professional Summary
-Dharmendra Awasthi is a Senior Software Engineer, Tech Lead, and PhD researcher in Computer Science & Artificial Intelligence. He designs and implements high-throughput distributed systems, cloud-native backend platforms, and event-driven microservices. Currently a Tech Lead at Luxoft (contracted for Tesco), he has led teams of up to 4, managed quarterly releases, and built systems handling 1,500+ TPS and 10M+ active users.
+Senior Software Engineer with 9+ years of experience building large-scale distributed systems and cloud-native microservices in telecom, retail, fintech, and gaming. Specializing in Java, Spring Boot, Kafka, and AWS. Designed high-throughput platforms handling 1,500+ TPS and 10M+ users, led end-to-end system design (HLD/LLD), and managed engineering teams of up to 4.
 
 ## Core Keywords & Titles
 - Dharmendra Awasthi
@@ -16,17 +16,17 @@ Dharmendra Awasthi is a Senior Software Engineer, Tech Lead, and PhD researcher 
 ## Technical Arsenal
 - **Programming Languages**: Java, Python, SQL, Bash
 - **Frameworks & Libraries**: Spring Boot, Spring Cloud, Hibernate, JUnit, Mockito
-- **Architecture & Design**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Circuit Breakers, Domain-Driven Design (DDD)
-- **Cloud & Infrastructure**: AWS (EC2, S3, SQS, Lambda, ECS, CloudWatch), Apache Kafka, PostgreSQL, MongoDB, Redis, Elasticsearch
-- **DevOps & Automation**: Docker, Kubernetes, Jenkins, Terraform, Git/GitHub, Maven, Gradle, REST APIs, gRPC, OAuth2, JWT
-- **Observability & Monitoring**: Prometheus, Grafana, ELK Stack, Splunk, Zipkin, Distributed Tracing
-- **AI & Machine Learning**: Large Language Models (LLMs), Deep Learning, Machine Learning, Transformers, LSTMs, NLP, Generative AI Integration
+- **Architecture & Design**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Circuit Breaker, Domain-Driven Design
+- **Cloud & Infrastructure**: AWS (EC2, S3, SQS, Lambda, ECS, CloudWatch), Kafka, PostgreSQL, MongoDB, Redis, Elasticsearch
+- **DevOps & Automation**: Docker, Kubernetes, Jenkins, Git, GitHub, Gradle, Maven, Terraform, REST APIs, gRPC, OAuth2, JWT
+- **Observability & Monitoring**: Zipkin, Prometheus, Grafana, ELK Stack, Splunk, Distributed Tracing
+- **AI & Machine Learning**: Large Language Models (LLMs), Deep Learning, Machine Learning, Transformers & LSTMs, Natural Language Processing (NLP), Generative AI Integration
 - **Engineering Practices**: System Design (HLD/LLD), Performance Tuning, Capacity Planning, CI/CD, Agile/Scrum, TDD
 
 ## Navigation & Contact
 - **Website**: [https://dharam.dev](https://dharam.dev)
 - **Full Markdown CV**: [https://dharam.dev/llms-full.txt](https://dharam.dev/llms-full.txt)
-- **LinkedIn**: [https://www.linkedin.com/in/dharamcodes/](https://www.linkedin.com/in/dharamcodes/)
+- **LinkedIn**: [https://www.linkedin.com/in/dharamcodes](https://www.linkedin.com/in/dharamcodes)
 - **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
 - **Email**: [er.dharamk@gmail.com](mailto:er.dharamk@gmail.com)
 - **Phone**: +91-9454318045

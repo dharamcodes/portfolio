@@ -42,7 +42,7 @@ export function Hero({ personal }: HeroProps) {
       </div>
       <div className={styles['hero-image-wrapper']}>
         <div className={styles['hero-image-glow']} />
-        <Image src="/profile-light.png" alt={`${personal.name} Profile`} width={400} height={400} className={`${styles['hero-image']} glass show-light`} priority />
+        <Image src="/profile-light.webp" alt={`${personal.name} Profile`} width={400} height={400} className={`${styles['hero-image']} glass show-light`} priority />
         <Image src={personal.profileImage} alt={`${personal.name} Profile`} width={400} height={400} className={`${styles['hero-image']} glass show-dark`} priority />
       </div>
     </div>

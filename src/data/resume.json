@@ -3,7 +3,7 @@
     "name": "Dharmendra Awasthi",
     "role": "Tech Lead",
     "summary": "Senior Software Engineer with 9+ years of experience building large-scale distributed systems and cloud-native microservices in telecom, retail, fintech, and gaming. Specializing in Java, Spring Boot, Kafka, and AWS. Designed high-throughput platforms handling 1,500+ TPS and 10M+ users, led end-to-end system design (HLD/LLD), and managed engineering teams of up to 4.",
-    "profileImage": "/profile.png"
+    "profileImage": "/profile.webp"
   },
   "contact": {
     "location": "Bengaluru, Karnataka, India",
@@ -166,29 +166,29 @@
   "projects": [
     {
       "title": "smc4j",
-      "description": "Java 17+ open-source trading library implementing Smart Money Concepts.",
+      "description": "A high-performance Java 17+ open-source trading library implementing Smart Money Concepts (SMC) for algorithmic trading, enabling structure mapping and liquidity sweep identification.",
       "tags": [
         "Java 17",
         "Finance",
         "Open Source"
       ],
       "url": "https://github.com/smc4j/smc4j",
-      "image": "/project1.png"
+      "image": "/project1.webp"
     },
     {
       "title": "tradesmc-api",
-      "description": "Spring Boot REST API for backtesting SMC-based trading strategies.",
+      "description": "A high-throughput Spring Boot REST API for executing backtests on SMC-based trading strategies, delivering comprehensive trade logging and performance analytics.",
       "tags": [
         "Spring Boot",
         "REST API",
         "Trading"
       ],
       "url": "https://github.com/dharamcodes/tradesmc-api",
-      "image": "/project2.png"
+      "image": "/project2.webp"
     },
     {
       "title": "ConnectX",
-      "description": "A modern, desktop-based Kafka management studio built with Tauri, React, and TypeScript. Manage clusters, produce messages, consume data, explore topics, and monitor metrics.",
+      "description": "A modern, desktop-based Kafka management studio built with Tauri, React, and TypeScript. Manage clusters, produce messages, consume data, and monitor metrics in real time.",
       "tags": [
         "Tauri",
         "React",
@@ -196,7 +196,7 @@
         "Kafka"
       ],
       "url": "https://github.com/dharamcodes/connectx",
-      "image": "/connectX_6.png"
+      "image": "/connectX_6.webp"
     }
   ],
   "education": [

@@ -33,6 +33,25 @@
 /* Base Transition */
 * {
   box-sizing: border-box;
+}
+
+body,
+header,
+footer,
+nav,
+a,
+button,
+input,
+textarea,
+select,
+.glass,
+.card,
+.btn,
+[class*="card"],
+[class*="btn"],
+[class*="badge"],
+[class*="tag"],
+[class*="toggle"] {
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -601,7 +620,7 @@ h3 {
 .blog-card,
 .education-card {
   opacity: 1;
-  will-change: transform, opacity;
+  will-change: opacity;
 }
 
 .fullpage-slide.slide-active .skill-badge-card-active,
@@ -624,11 +643,9 @@ h3 {
 @keyframes cardStaggerFade {
   from {
     opacity: 0;
-    transform: translateY(16px) scale(0.98);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
   }
 }
 

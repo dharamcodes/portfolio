@@ -9,124 +9,158 @@ Dharmendra Awasthi is a Lead Engineer and Senior Software Engineer specializing 
 - **Phone**: +91-9454318045
 - **Location**: Bengaluru, Karnataka, India
 - **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
-- **LinkedIn**: [https://www.linkedin.com/in/dharamcodes/](https://www.linkedin.com/in/dharamcodes/)
+- **LinkedIn**: [https://www.linkedin.com/in/dharamcodes](https://www.linkedin.com/in/dharamcodes)
 - **Website**: [https://dharam.dev](https://dharam.dev)
 
 ---
 
 ## Executive Summary
-Senior Backend Engineer and Tech Lead with 9+ years of experience constructing high-availability distributed systems and cloud-native microservices for telecom, retail, fintech, and gaming sectors. Expert in Java, Spring Boot, Spring Cloud, Apache Kafka, and AWS. Demonstrated success designing systems processing 1,500+ TPS and serving over 10 million users. Proven track record leading engineering squads of up to 4, governing high-level and low-level designs (HLD/LLD), and driving cross-functional releases. Currently pursuing a part-time PhD in Computer Science & Artificial Intelligence at NIT Nagpur.
+Senior Software Engineer with 9+ years of experience building large-scale distributed systems and cloud-native microservices in telecom, retail, fintech, and gaming. Specializing in Java, Spring Boot, Kafka, and AWS. Designed high-throughput platforms handling 1,500+ TPS and 10M+ users, led end-to-end system design (HLD/LLD), and managed engineering teams of up to 4. Currently pursuing a part-time PhD in Computer Science & Artificial Intelligence at NIT Nagpur.
 
 ---
 
 ## Technical Skills & Expertise
 
 ### Programming Languages
-- **Languages**: Java (8/11/17+), Python, SQL (PostgreSQL, MySQL), Bash Scripting
+- Java
+- Python
+- SQL
+- Bash
 
 ### Frameworks & Libraries
-- **Frameworks**: Spring Boot, Spring Cloud, Hibernate ORM, JPA, Reactive Streams
-- **Libraries & Testing**: JUnit, Mockito, Testcontainers
+- Spring Boot
+- Spring Cloud
+- Hibernate
+- JUnit
+- Mockito
 
 ### Architecture & Design
-- **Architectural Patterns**: Microservices, Event-Driven Architecture, CQRS, Saga Pattern, Outbox Pattern, Circuit Breakers, Domain-Driven Design (DDD)
+- Microservices
+- Event-Driven Architecture
+- CQRS
+- Saga Pattern
+- Circuit Breaker
+- Domain-Driven Design
 
 ### Cloud & Infrastructure
-- **Message Brokers**: Apache Kafka (Leader-Worker patterns, consumer groups, partition management)
-- **Cloud Computing**: Amazon Web Services (AWS) - EC2, S3, SQS, Lambda, ECS, CloudWatch, IAM
-- **Databases & Caches**: PostgreSQL, MongoDB, Redis (Caching, Session management), Elasticsearch
+- AWS (EC2, S3, SQS, Lambda, ECS, CloudWatch)
+- Kafka
+- PostgreSQL
+- MongoDB
+- Redis
+- Elasticsearch
 
 ### DevOps & Automation
-- **Containerization**: Docker, Kubernetes (K8s)
-- **CI/CD & IaC**: Jenkins, GitLab CI, GitHub Actions, Terraform (IaC), Maven, Gradle
-- **APIs & Auth**: REST APIs, gRPC, OAuth2, JSON Web Tokens (JWT)
+- Docker
+- Kubernetes
+- Jenkins
+- Git
+- GitHub
+- Gradle
+- Maven
+- Terraform
+- REST APIs
+- gRPC
+- OAuth2
+- JWT
 
 ### Observability & Monitoring
-- **Monitoring Tools**: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, Zipkin, Distributed Tracing
+- Zipkin
+- Prometheus
+- Grafana
+- ELK Stack
+- Splunk
+- Distributed Tracing
 
 ### AI & Machine Learning
-- **Core Concepts**: Large Language Models (LLMs), Deep Learning, Machine Learning, Neural Networks
-- **Architectures & Models**: Transformers (Attention mechanisms, Positional encoding), LSTMs, Sequence-to-Sequence models
-- **Applications**: Natural Language Processing (NLP), Generative AI Integration, Content Verification pipelines
+- Large Language Models (LLMs)
+- Deep Learning
+- Machine Learning
+- Transformers & LSTMs
+- Natural Language Processing (NLP)
+- Generative AI Integration
 
 ### Engineering Practices
-- **Design & Execution**: HLD (High-Level Design), LLD (Low-Level Design), System Design
-- **Optimization**: Performance Tuning, Latency Optimization, Capacity Planning
-- **Methodology & Quality**: TDD (Test-Driven Development), CI/CD, Agile/Scrum
+- System Design (HLD/LLD)
+- Performance Tuning
+- Capacity Planning
+- CI/CD
+- Agile/Scrum
+- TDD
 
 ---
 
 ## Professional Work Experience
 
-### Senior Software Engineer (Tech Lead) | Luxoft (Client: Tesco)
-**Bengaluru, India** | *Jul 2024 – Present*
-- **Orchestration Systems**: Designed and implemented an Orchestrator System using Spring Boot microservices, supporting 1,500+ TPS at 99.9% uptime.
-- **Data Ingestion Pipelines**: Engineered Leader-Worker scheduling and processing using Apache Kafka, facilitating over 1 million message ingestions daily with zero data loss.
-- **Architecture & Design**: Managed end-to-end HLD and LLD for 8+ major platform features, applying failure-mode analysis and CI/CD quality gates.
-- **Generative AI Integration**: Spearheaded integration of LLMs for content validation pipelines, reducing manual review efforts by 30%.
-- **Leadership & Mentoring**: Mentored 3 backend engineers on reactive architectures, system design, and Kafka patterns, reducing onboarding ramp-up times by 40%.
-- **Product Strategy**: Led quarterly product releases and roadmap alignment with 3+ distinct business units.
+### Senior Software Engineer | Luxoft (Client: Tesco)
+**Bengaluru, Karnataka, India** | *Jul 2024 – Present*
+- Designed and built an Orchestrator System using Spring Boot microservices, sustaining 1,500+ TPS at 99.9% uptime.
+- Engineered Leader-Worker processing via Kafka pipelines, enabling 1M+ messages/day ingestion with zero data loss.
+- Owned end-to-end HLD/LLD for 8+ features, incorporating failure-mode analysis and CI/CD quality gates.
+- Integrated Generative AI (LLMs) into content verification, reducing manual review effort by 30%.
+- Mentored 3 engineers on system design and Kafka patterns, accelerating project ramp-up by 40%.
+- Drove technical strategy and quarterly release planning with 3+ business units, aligning engineering with product goals.
 
-### Senior Member of Technical Staff | Ness Digital Engineering
-**Bengaluru, India** | *May 2023 – May 2024*
-- **Greenfield Product Delivery**: Spearheaded a brand new backend platform from scratch using Java, Spring Boot, and Spring Cloud, deploying it to production within 4 months.
-- **Team Leadership**: Directed a team of 4 software engineers in design reviews, agile ceremonies, and sprint execution, improving overall team velocity by 25%.
-- **Latency Optimization**: Reduced core API latencies by 50% through targeted Redis caching implementations and concurrent execution using `CompletableFuture`.
-- **Configuration Management**: Created a dynamic runtime feature-toggle infrastructure using Spring Cloud Config, decreasing deployment lead times by 60%.
-- **Client Engagement**: Formulated technical roadmaps and product milestones for 4 key enterprise clients.
+### Senior Technical Staff | Ness Digital Engineering
+**Bengaluru, Karnataka, India** | *May 2023 – May 2024*
+- Built a greenfield platform from scratch using Java, Spring Boot, and Spring Cloud, shipping to production in 4 months.
+- Led a team of 4 engineers through design reviews, code reviews, and sprint planning, improving velocity by 25%.
+- Reduced API latency by 50% by implementing Redis caching and concurrent processing with CompletableFuture.
+- Designed a runtime feature-toggle system using Spring Cloud Config, cutting deployment lead time by 60%.
+- Defined technical roadmaps and delivery milestones for 4 enterprise clients in coordination with product and QA teams.
 
-### Senior Software Engineer II | Airtel Africa
-**Gurugram, India** | *Feb 2022 – May 2023*
-- **High-Throughput Billing**: Crafted high-throughput telecom billing microservices serving 10 million active subscribers across Africa.
-- **Query Management**: Designed and rolled out a reusable customer query management engine, lowering average query resolution time by 40%.
-- **Code Refactoring**: Restructured legacy packages using Strategy and Factory patterns, shrinking code duplication metrics by 35%.
-- **Quality Standards**: Standardized OpenAPI/Swagger definitions across 12+ microservices and achieved a 95% test coverage rate via strict Test-Driven Development (TDD).
+### Senior Software Engineer | Airtel Africa
+**Gurugram, Haryana, India** | *Feb 2022 – May 2023*
+- Built high-throughput microservices using Java and Spring Boot for telecom billing, serving 10M+ users across Africa.
+- Delivered a reusable Customer Query Management platform, reducing query resolution time by 40%.
+- Refactored core modules using design patterns (Strategy, Factory), reducing code duplication by 35%.
+- Achieved 95% test coverage via TDD with JUnit and SonarQube; standardized OpenAPI/Swagger across 12+ services.
 
-### Senior Software Engineer | Aristocrat Technologies
-**Gurugram, India** | *Jul 2021 – Feb 2022*
-- **Gaming Platform Engineering**: Enhanced and tuned Java microservices for B2B Class 2/3 gaming platforms, increasing transaction throughput capacity by 20%.
-- **Event Sourcing**: Designed event-sourced tracking engines for compliance and auditing, achieving 99.5% data accuracy.
-- **Reactive Streams**: Implemented asynchronous operations using reactive streams to reduce peak-load API latency by 35%.
+### Senior Software Engineer | Aristocrat (B2B Gaming)
+**Gurugram, Haryana, India** | *Jul 2021 – Feb 2022*
+- Optimized backend Java microservices for Class 2/3 gaming platforms, improving transaction throughput by 20%.
+- Implemented event-sourcing for user activity tracking, improving data accuracy to 99.5% with audit compliance.
+- Reduced peak-load API latency by 35% by implementing asynchronous processing with reactive streams.
 
 ### Member of Technical Staff | Oracle
-**Bengaluru, India** | *Jan 2021 – Jul 2021*
-- **TMF-Compliant APIs**: Built TM Forum-compliant order-management REST APIs in Java/Spring Boot, automating 40% of manual processing tasks.
-- **API Performance**: Leveraged Redis caching and SQL query tuning to bring down API response times from 800ms to under 200ms.
+**Bengaluru, Karnataka, India** | *Jan 2021 – Jul 2021*
+- Developed TMF-compliant REST APIs in Java/Spring Boot for order management, reducing manual processing by 40%.
+- Reduced API latency from 800ms to under 200ms by implementing Redis caching and optimized pagination.
 
 ### Development Consultant | CSG International
-**Bengaluru, India** | *Sep 2018 – Nov 2020*
-- **Telecom & CRM Integration**: Developed 3 primary Java-based services and CRM integrations supporting 5 million subscribers.
-- **Reusable Frontend Libraries**: Formulated a shared UI library adopted by 3 separate application teams, boosting UI delivery speed by 25%.
+**Bengaluru, Karnataka, India** | *Sep 2018 – Nov 2020*
+- Developed 3 scalable Java backend services and REST APIs for billing/CRM integration, supporting 5M+ subscribers.
+- Built a reusable UI component library adopted by 3 teams, accelerating frontend delivery by 25%.
 
 ### System Analyst | Amdocs
-**Pune, India** | *Feb 2017 – Sep 2018*
-- **Performance Refactoring**: Refactored legacy Java modules and optimized complex SQL queries to deliver a 30% increase in batch processing performance.
-- **SLA Management**: Maintained a 100% SLA compliance rate across high-stress production environments.
+**Pune, Maharashtra, India** | *Feb 2017 – Sep 2018*
+- Improved legacy Java application performance by 30% through codebase refactoring and query optimization.
+- Maintained 100% SLA compliance across production environments via proactive monitoring and root-cause analysis.
 
 ---
 
 ## Featured Open-Source Projects
 
 ### smc4j
-- **Description**: Java 17+ open-source finance library implementing Smart Money Concepts (SMC) for algorithmic trading.
+- **Description**: A high-performance Java 17+ open-source trading library implementing Smart Money Concepts (SMC) for algorithmic trading, enabling structure mapping and liquidity sweep identification.
 - **Link**: [https://github.com/smc4j/smc4j](https://github.com/smc4j/smc4j)
 
 ### tradesmc-api
-- **Description**: Spring Boot REST API for running backtests on SMC-based trading strategies.
+- **Description**: A high-throughput Spring Boot REST API for executing backtests on SMC-based trading strategies, delivering comprehensive trade logging and performance analytics.
 - **Link**: [https://github.com/dharamcodes/tradesmc-api](https://github.com/dharamcodes/tradesmc-api)
 
 ### ConnectX
-- **Description**: A modern Kafka management studio and desktop client built with Tauri, React, and TypeScript. Enables developers to manage clusters, inspect topics, produce/consume data, and view metrics.
+- **Description**: A modern, desktop-based Kafka management studio built with Tauri, React, and TypeScript. Manage clusters, produce messages, consume data, and monitor metrics in real time.
 - **Link**: [https://github.com/dharamcodes/connectx](https://github.com/dharamcodes/connectx)
 
 ---
 
 ## Education & Certifications
-- **Ph.D. in Computer Science & Artificial Intelligence (Part-Time)**
+- **Doctor of Philosophy (PhD), Part-Time, Computer Science & Artificial Intelligence**
   *National Institute of Technology (NIT) Nagpur* | *2025 – Present*
-- **Advanced General Management Program (AGMP)**
+- **Advanced General Management Program (AGMP), General Management**
   *Institute of Management Technology (IMT), Ghaziabad* | *2022 – 2024*
-- **Postgraduate Diploma in Advanced Computing (PG-DAC)**
+- **Postgraduate Diploma in Advanced Computing (PG-DAC), Computer Engineering**
   *Centre for Development of Advanced Computing (CDAC) Hyderabad* | *2016 – 2017*
-- **Bachelor of Technology (B.Tech) in Computer Science & Engineering**
+- **Bachelor of Technology (B.Tech), Computer Science & Engineering**
   *Babu Banarasi Das (BBD) University, Lucknow* | *2011 – 2015*

@@ -11,7 +11,7 @@ interface HeaderProps {
 }
 
 const SECTIONS = [
-  { id: "about", label: "About" },
+  { id: "about", label: "Home" },
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },

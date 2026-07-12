@@ -61,6 +61,12 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
+      const now = Date.now();
+      if (isTransitioning.current || now - lastScrollTime.current < 700) {
+        e.preventDefault();
+        return;
+      }
+
       const target = e.target as HTMLElement;
       const scrollable = target.closest(".scrollable-content") as HTMLElement | null;
       if (scrollable) {
@@ -74,16 +80,11 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
       
       e.preventDefault();
 
-      const now = Date.now();
       const delta = e.deltaY;
       const absDelta = Math.abs(delta);
 
       const isDecelerating = absDelta < Math.abs(lastDeltaY.current);
       lastDeltaY.current = delta;
-
-      if (isTransitioning.current || now - lastScrollTime.current < 700) {
-        return;
-      }
 
       if (absDelta < 35 || isDecelerating) {
         return;
