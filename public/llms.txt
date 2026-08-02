@@ -3,7 +3,7 @@
 > Lead Engineer, Senior Software Engineer, and Software Developer with 9+ years of experience specializing in Java, Spring Boot, Apache Kafka, AWS, and Microservices Architecture.
 
 ## Professional Summary
-Senior Software Engineer with 9+ years of experience building large-scale distributed systems and cloud-native microservices in telecom, retail, fintech, and gaming. Specializing in Java, Spring Boot, Kafka, and AWS. Designed high-throughput platforms handling 1,500+ TPS and 10M+ users, led end-to-end system design (HLD/LLD), and managed engineering teams of up to 4.
+Senior Software Engineer with 9.5+ years of experience building large-scale distributed systems and cloud-native microservices in telecom, retail, fintech, and gaming. Specializing in Java, Spring Boot, Kafka, and AWS. Designed high-throughput platforms handling 1,500+ TPS and 10M+ users, led end-to-end system design (HLD/LLD), and managed engineering teams of up to 4.
 
 ## Core Keywords & Titles
 - Dharmendra Awasthi
