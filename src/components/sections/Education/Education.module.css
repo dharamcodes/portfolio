@@ -13,7 +13,7 @@
 }
 
 .education-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -118,46 +118,45 @@
   border-color: rgba(99, 102, 241, 0.25);
 }
 
-
 @media (max-width: 768px) {
-    /* ── EDUCATION — horizontal swipe ── */
-    .education-grid {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      gap: 0.75rem;
-      padding-bottom: 0.5rem;
-      scrollbar-width: none;
-      mask-image: linear-gradient(to right, black 85%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-      width: 100%;
-    }
-    .education-grid::-webkit-scrollbar {
-      display: none;
-    }
-    .education-card {
-      flex: 0 0 240px;
-      height: auto;
-      padding: 1.1rem;
-    }
-    .edu-icon {
-      font-size: 1.3rem;
-      margin-bottom: 0.35rem;
-    }
-    .education-card h3 {
-      font-size: 0.95rem;
-      margin-bottom: 0.3rem;
-    }
-    .education-card p {
-      font-size: 0.84rem;
-      margin-bottom: 0.75rem;
-    }
-    .edu-duration {
-      font-size: 0.75rem;
-      padding: 0.18rem 0.6rem;
-    }
+  /* ── EDUCATION — horizontal swipe ── */
+  .education-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0.75rem;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    width: 100%;
+  }
+  .education-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .education-card {
+    flex: 0 0 240px;
+    height: auto;
+    padding: 1.1rem;
+  }
+  .edu-icon {
+    font-size: 1.3rem;
+    margin-bottom: 0.35rem;
+  }
+  .education-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+  .education-card p {
+    font-size: 0.84rem;
+    margin-bottom: 0.75rem;
+  }
+  .edu-duration {
+    font-size: 0.75rem;
+    padding: 0.18rem 0.6rem;
+  }
 }
 
 @media (min-width: 769px) {

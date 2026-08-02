@@ -15,7 +15,6 @@
   overflow: hidden;
 }
 
-
 .contact-icon-wrapper {
   display: inline-flex;
   align-items: center;
@@ -67,31 +66,30 @@
   margin-bottom: 1.5rem;
 }
 
-
 @media (max-width: 768px) {
-    /* ── CONTACT ── */
-    .contact-card {
-      padding: 2.2rem 1.2rem;
-    }
-    .contact-icon-wrapper {
-      width: 70px;
-      height: 70px;
-      margin-bottom: 1.25rem;
-    }
-    .contact-envelope-icon {
-      width: 36px;
-      height: 36px;
-    }
-    .contact-subtitle {
-      font-size: 1.05rem;
-      margin-bottom: 0.75rem;
-    }
-    .contact-desc {
-      font-size: 0.88rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-    }
-    .contact-btn-row {
-      gap: 0.5rem;
-    }
+  /* ── CONTACT ── */
+  .contact-card {
+    padding: 2.2rem 1.2rem;
+  }
+  .contact-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.25rem;
+  }
+  .contact-envelope-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .contact-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+  }
+  .contact-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .contact-btn-row {
+    gap: 0.5rem;
+  }
 }

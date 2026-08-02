@@ -16,7 +16,7 @@
 }
 
 .blog-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -140,52 +140,51 @@
   overflow: hidden;
 }
 
-
 @media (max-width: 768px) {
-    .blogs-grid-container {
-      display: flex;
-      overflow-x: auto;
-      overflow-y: hidden;
-      gap: 0.75rem;
-      padding-right: 1.5rem;
-      /* peek hint */
-      padding-bottom: 0.5rem;
-      scrollbar-width: none;
-      /* fade out right edge slightly */
-      mask-image: linear-gradient(to right, black 85%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    }
-    .blogs-grid-container::-webkit-scrollbar {
-      display: none;
-    }
-    .blog-card {
-      flex: 0 0 215px;
-      height: auto;
-      min-height: 185px;
-      padding: 1.1rem;
-    }
-    .blog-card-meta {
-      margin-bottom: 0.45rem;
-    }
-    .blog-card-title {
-      font-size: 0.85rem;
-      line-height: 1.35;
-    }
-    .blog-card-desc {
-      font-size: 0.76rem;
-      margin-top: 0.3rem;
-    }
-    .blog-card-date {
-      font-size: 0.7rem;
-    }
-    .blog-card-time {
-      font-size: 0.66rem;
-      padding: 0.17rem 0.5rem;
-    }
-    .blog-card-link {
-      font-size: 0.78rem;
-      margin-top: 0.5rem;
-    }
+  .blogs-grid-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0.75rem;
+    padding-right: 1.5rem;
+    /* peek hint */
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+    /* fade out right edge slightly */
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  }
+  .blogs-grid-container::-webkit-scrollbar {
+    display: none;
+  }
+  .blog-card {
+    flex: 0 0 215px;
+    height: auto;
+    min-height: 185px;
+    padding: 1.1rem;
+  }
+  .blog-card-meta {
+    margin-bottom: 0.45rem;
+  }
+  .blog-card-title {
+    font-size: 0.85rem;
+    line-height: 1.35;
+  }
+  .blog-card-desc {
+    font-size: 0.76rem;
+    margin-top: 0.3rem;
+  }
+  .blog-card-date {
+    font-size: 0.7rem;
+  }
+  .blog-card-time {
+    font-size: 0.66rem;
+    padding: 0.17rem 0.5rem;
+  }
+  .blog-card-link {
+    font-size: 0.78rem;
+    margin-top: 0.5rem;
+  }
 }
 
 @media (min-width: 769px) {

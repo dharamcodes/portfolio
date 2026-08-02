@@ -18,20 +18,25 @@ A premium, modern developer portfolio website for Dharmendra Awasthi (Tech Lead 
 ## ✨ Features & Optimizations
 
 ### 1. Dynamic Content Pipeline
+
 All website sections, SEO metadata, and structured schemas are driven dynamically from a single source of truth: [`src/data/resume.json`](file:///Users/dharam.dev/devspace/portfolio/src/data/resume.json). Modifying this JSON immediately compiles updates across the home page, privacy policy page, metadata headers, sitemaps, and LLM text targets.
 
 ### 2. Large Language Model & AI Search Ingestion (LLMO / GEO)
+
 Optimized to ensure AI search engines (like Gemini, Perplexity, and ChatGPT Search) parse and represent Dharmendra's profile with high accuracy:
+
 - **`llms.txt` & `llms-full.txt`**: Serves structured markdown-encoded versions of the resume directly at the root (`/llms.txt`, `/llms-full.txt`).
 - **Dynamic Schema.org `@graph`**: Generates nested JSON-LD linked schemas for the `Person` profile. The graph maps education history, skills, featured projects (as `SoftwareSourceCode` items), and publications (as `BlogPosting` items) so crawlers index them semantically.
 - **AI Crawler Directives**: Programmatic [`robots.ts`](file:///Users/dharam.dev/devspace/portfolio/src/app/robots.ts) explicitly configures rules allowing AI crawlers (`GPTBot`, `ClaudeBot`, `PerplexityBot`, etc.) direct access to the structured markdown files.
 
 ### 3. Hydration-Safe Transitions & Animations
+
 - **Fullpage Horizontal Slider**: Uses a custom client-side [`FullPageScroller`](file:///Users/dharam.dev/devspace/portfolio/src/components/layout/FullPageScroller/FullPageScroller.tsx) layout with wheel, touch, and hash navigation to slide sections horizontally with smooth transitions.
 - **Horizontal Page Transitions**: Injects a custom `.page-slide-in` CSS animation to translate content from the side on layout mounts.
 - **Hydration Mismatch Mitigation**: Extracted critical layout styles and component transitions into localized CSS modules (e.g. `FullPageScroller.module.css`, `Pagination.module.css`), ensuring zero-warning React console logs and hydration safety.
 
 ### 4. Interactive UI Elements
+
 - **Card-level Interactivity**: Project showcases are compiled as active clickable card anchors. Hovering displays code exploration overlays and clicking anywhere on the card navigates directly to the project's repository.
 - **Light/Dark Mode**: High-contrast, accessibility-audited color profiles mapped via CSS variables.
 
@@ -86,8 +91,11 @@ npm run build
 The build pipeline compiles to static files (`output: 'export'`) under `/out`.
 
 ### Build configuration
+
 Set your target deployment URL by specifying the `NEXT_PUBLIC_SITE_URL` build-time environment variable:
+
 ```bash
 NEXT_PUBLIC_SITE_URL=https://dharam.dev npm run build
 ```
+
 This ensures sitemap URLs, robots rules, canonical tags, and OpenGraph images resolve with absolute URLs.

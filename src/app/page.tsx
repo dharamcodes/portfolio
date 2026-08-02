@@ -38,7 +38,7 @@ export default function Home() {
   }, []);
 
   if (isMobile === null) {
-    // Static SSR Fallback: Render structural skeleton for SEO search indexing 
+    // Static SSR Fallback: Render structural skeleton for SEO search indexing
     // and to avoid initial hydration flickers on page load.
     return (
       <div className="desktop-only-wrapper" style={{ opacity: 0.1 }}>

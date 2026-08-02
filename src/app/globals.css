@@ -52,7 +52,11 @@ select,
 [class*="badge"],
 [class*="tag"],
 [class*="toggle"] {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .show-light {
@@ -399,7 +403,9 @@ h3 {
 /* Scroll Reveal Classes */
 .scroll-reveal {
   opacity: 0;
-  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
 }
 
@@ -449,7 +455,7 @@ h3 {
 }
 
 .education-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -550,8 +556,6 @@ h3 {
   }
 }
 
-
-
 /* ─── Global Footer ─── */
 .footer {
   position: fixed;
@@ -575,7 +579,6 @@ h3 {
   align-items: center;
   width: 100%;
 }
-
 
 .footer-link {
   color: var(--accent-1);
@@ -631,14 +634,45 @@ h3 {
 }
 
 /* Stagger animation delays for cards */
-.skill-badge-card-active:nth-child(1), .project-card:nth-child(1), .blog-card:nth-child(1), .education-card:nth-child(1) { animation-delay: 0.12s; }
-.skill-badge-card-active:nth-child(2), .project-card:nth-child(2), .blog-card:nth-child(2), .education-card:nth-child(2) { animation-delay: 0.18s; }
-.skill-badge-card-active:nth-child(3), .project-card:nth-child(3), .blog-card:nth-child(3), .education-card:nth-child(3) { animation-delay: 0.24s; }
-.skill-badge-card-active:nth-child(4), .project-card:nth-child(4), .blog-card:nth-child(4), .education-card:nth-child(4) { animation-delay: 0.30s; }
-.skill-badge-card-active:nth-child(5), .blog-card:nth-child(5) { animation-delay: 0.36s; }
-.skill-badge-card-active:nth-child(6), .blog-card:nth-child(6) { animation-delay: 0.42s; }
-.skill-badge-card-active:nth-child(7), .blog-card:nth-child(7) { animation-delay: 0.48s; }
-.blog-card:nth-child(8) { animation-delay: 0.54s; }
+.skill-badge-card-active:nth-child(1),
+.project-card:nth-child(1),
+.blog-card:nth-child(1),
+.education-card:nth-child(1) {
+  animation-delay: 0.12s;
+}
+.skill-badge-card-active:nth-child(2),
+.project-card:nth-child(2),
+.blog-card:nth-child(2),
+.education-card:nth-child(2) {
+  animation-delay: 0.18s;
+}
+.skill-badge-card-active:nth-child(3),
+.project-card:nth-child(3),
+.blog-card:nth-child(3),
+.education-card:nth-child(3) {
+  animation-delay: 0.24s;
+}
+.skill-badge-card-active:nth-child(4),
+.project-card:nth-child(4),
+.blog-card:nth-child(4),
+.education-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.skill-badge-card-active:nth-child(5),
+.blog-card:nth-child(5) {
+  animation-delay: 0.36s;
+}
+.skill-badge-card-active:nth-child(6),
+.blog-card:nth-child(6) {
+  animation-delay: 0.42s;
+}
+.skill-badge-card-active:nth-child(7),
+.blog-card:nth-child(7) {
+  animation-delay: 0.48s;
+}
+.blog-card:nth-child(8) {
+  animation-delay: 0.54s;
+}
 
 @keyframes cardStaggerFade {
   from {
@@ -651,7 +685,6 @@ h3 {
 
 /* ─── Responsive ─── */
 @media (max-height: 800px) {
-
   .scrollable-content {
     max-height: 74vh;
   }
@@ -681,7 +714,6 @@ h3 {
    Everything else   : single-column, content-height only
 ══════════════════════════════════════════════════ */
 @media (max-width: 768px) {
-
   /* Disable desktop card animations on mobile */
   .skills-category-card,
   .project-card,
@@ -691,8 +723,6 @@ h3 {
     animation: none !important;
     transform: none !important;
   }
-
-
 
   .scrollable-content {
     max-height: none;
@@ -748,7 +778,6 @@ h3 {
   }
 
   @keyframes bounceHint {
-
     0%,
     100% {
       opacity: 0.7;
@@ -760,7 +789,6 @@ h3 {
       transform: translateX(3px);
     }
   }
-
 
   /* ── GLOBAL FOOTER ── */
   .footer {
@@ -858,4 +886,3 @@ h3 {
     display: none !important;
   }
 }
-

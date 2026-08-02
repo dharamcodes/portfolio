@@ -37,12 +37,20 @@ export function Header({ name, activeSectionId, onNavClick }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className="container">
-        <div className={styles.logo} onClick={closeMenu} style={{ cursor: "pointer" }} aria-label={`${name} portfolio homepage`}>
+        <div
+          className={styles.logo}
+          onClick={closeMenu}
+          style={{ cursor: "pointer" }}
+          aria-label={`${name} portfolio homepage`}
+        >
           dharam<span className="gradient-text">.dev</span>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className={`${styles['nav-links']} ${styles['desktop-nav']}`} aria-label="Desktop navigation">
+        <nav
+          className={`${styles["nav-links"]} ${styles["desktop-nav"]}`}
+          aria-label="Desktop navigation"
+        >
           {SECTIONS.map((sec, idx) => (
             <a
               key={sec.id}
@@ -69,8 +77,11 @@ export function Header({ name, activeSectionId, onNavClick }: HeaderProps) {
         </button>
 
         {/* Mobile Navigation Overlay */}
-        <div className={`${styles['mobile-nav-overlay']} ${isOpen ? styles.active : ""}`} aria-hidden={!isOpen}>
-          <nav className={styles['mobile-nav-links']} aria-label="Mobile navigation">
+        <div
+          className={`${styles["mobile-nav-overlay"]} ${isOpen ? styles.active : ""}`}
+          aria-hidden={!isOpen}
+        >
+          <nav className={styles["mobile-nav-links"]} aria-label="Mobile navigation">
             {SECTIONS.map((sec, idx) => (
               <a
                 key={sec.id}
@@ -81,7 +92,7 @@ export function Header({ name, activeSectionId, onNavClick }: HeaderProps) {
                 {sec.label}
               </a>
             ))}
-            <div className={styles['mobile-theme-toggle']} onClick={closeMenu}>
+            <div className={styles["mobile-theme-toggle"]} onClick={closeMenu}>
               <ThemeToggle />
             </div>
           </nav>

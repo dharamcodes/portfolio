@@ -145,7 +145,10 @@ export function MuiMobileApp({
             root: {
               borderRadius: 16,
               backgroundImage: "none",
-              border: mode === "dark" ? "1px solid rgba(255, 255, 255, 0.08)" : "1px solid rgba(0, 0, 0, 0.05)",
+              border:
+                mode === "dark"
+                  ? "1px solid rgba(255, 255, 255, 0.08)"
+                  : "1px solid rgba(0, 0, 0, 0.05)",
               boxShadow: "none",
             },
           },
@@ -155,7 +158,10 @@ export function MuiMobileApp({
             root: {
               borderRadius: 12,
               backgroundImage: "none",
-              border: mode === "dark" ? "1px solid rgba(255, 255, 255, 0.08)" : "1px solid rgba(0, 0, 0, 0.05)",
+              border:
+                mode === "dark"
+                  ? "1px solid rgba(255, 255, 255, 0.08)"
+                  : "1px solid rgba(0, 0, 0, 0.05)",
               boxShadow: "none",
               "&:before": {
                 display: "none",
@@ -182,13 +188,20 @@ export function MuiMobileApp({
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
       <Box sx={{ pb: 8, minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-        
         {/* Top Header App Bar */}
-        <AppBar position="sticky" color="inherit" elevation={0} sx={{
-          borderBottom: mode === "dark" ? "1px solid rgba(255, 255, 255, 0.08)" : "1px solid rgba(0, 0, 0, 0.05)",
-          backdropFilter: "blur(10px)",
-          backgroundColor: mode === "dark" ? "rgba(9, 9, 11, 0.8)" : "rgba(248, 250, 252, 0.8)",
-        }}>
+        <AppBar
+          position="sticky"
+          color="inherit"
+          elevation={0}
+          sx={{
+            borderBottom:
+              mode === "dark"
+                ? "1px solid rgba(255, 255, 255, 0.08)"
+                : "1px solid rgba(0, 0, 0, 0.05)",
+            backdropFilter: "blur(10px)",
+            backgroundColor: mode === "dark" ? "rgba(9, 9, 11, 0.8)" : "rgba(248, 250, 252, 0.8)",
+          }}
+        >
           <Toolbar sx={{ justifyContent: "space-between" }}>
             <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: "-0.03em" }}>
               DHARMENDRA <span style={{ color: muiTheme.palette.primary.main }}>K.</span>
@@ -201,17 +214,26 @@ export function MuiMobileApp({
 
         {/* Tab Page Contents */}
         <Container sx={{ py: 2, flexGrow: 1, overflow: "hidden" }}>
-          
           {/* PROFILE TAB */}
           {activeTab === 0 && (
-            <Box sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              minHeight: "72vh",
-              gap: 3,
-            }}>
-              <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", py: 2 }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                minHeight: "72vh",
+                gap: 3,
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  textAlign: "center",
+                  py: 2,
+                }}
+              >
                 <Avatar
                   src={personalInfo.profileImage}
                   alt={personalInfo.name}
@@ -223,7 +245,7 @@ export function MuiMobileApp({
                 <Typography variant="subtitle1" color="primary" sx={{ fontWeight: 600, mb: 2 }}>
                   {personalInfo.role}
                 </Typography>
-                
+
                 {/* Hero Button row */}
                 <Box sx={{ display: "flex", gap: 1.5, width: "100%", justifyContent: "center" }}>
                   <Button
@@ -250,7 +272,17 @@ export function MuiMobileApp({
 
               <Card>
                 <CardContent sx={{ textAlign: "center" }}>
-                  <Typography variant="h6" sx={{ fontWeight: 800, mb: 1, textTransform: "uppercase", fontSize: "0.95rem", letterSpacing: "0.05em" }} color="primary">
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: 800,
+                      mb: 1,
+                      textTransform: "uppercase",
+                      fontSize: "0.95rem",
+                      letterSpacing: "0.05em",
+                    }}
+                    color="primary"
+                  >
                     About Me
                   </Typography>
                   <Typography variant="body2" sx={{ lineHeight: 1.7, color: "text.secondary" }}>
@@ -264,7 +296,17 @@ export function MuiMobileApp({
           {/* EXPERIENCE TAB */}
           {activeTab === 1 && (
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-              <Typography variant="h6" sx={{ fontWeight: 800, mb: 1, textTransform: "uppercase", fontSize: "0.95rem", letterSpacing: "0.05em" }} color="primary">
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 800,
+                  mb: 1,
+                  textTransform: "uppercase",
+                  fontSize: "0.95rem",
+                  letterSpacing: "0.05em",
+                }}
+                color="primary"
+              >
                 Work Experience
               </Typography>
               {experience.map((job, idx) => (
@@ -280,12 +322,23 @@ export function MuiMobileApp({
                     </Box>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography variant="caption" color="primary" sx={{ display: "block", mb: 1.5, fontWeight: 700 }}>
+                    <Typography
+                      variant="caption"
+                      color="primary"
+                      sx={{ display: "block", mb: 1.5, fontWeight: 700 }}
+                    >
                       📍 {job.location}
                     </Typography>
-                    <Box component="ul" sx={{ m: 0, pl: 2, display: "flex", flexDirection: "column", gap: 1 }}>
+                    <Box
+                      component="ul"
+                      sx={{ m: 0, pl: 2, display: "flex", flexDirection: "column", gap: 1 }}
+                    >
                       {job.bullets.map((bullet, bIdx) => (
-                        <Box component="li" key={bIdx} sx={{ fontSize: "0.85rem", color: "text.secondary", lineHeight: 1.6 }}>
+                        <Box
+                          component="li"
+                          key={bIdx}
+                          sx={{ fontSize: "0.85rem", color: "text.secondary", lineHeight: 1.6 }}
+                        >
                           {bullet}
                         </Box>
                       ))}
@@ -299,13 +352,32 @@ export function MuiMobileApp({
           {/* SKILLS TAB */}
           {activeTab === 2 && (
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
-              <Typography variant="h6" sx={{ fontWeight: 800, mb: 0.5, textTransform: "uppercase", fontSize: "0.95rem", letterSpacing: "0.05em" }} color="primary">
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 800,
+                  mb: 0.5,
+                  textTransform: "uppercase",
+                  fontSize: "0.95rem",
+                  letterSpacing: "0.05em",
+                }}
+                color="primary"
+              >
                 Technical Skills
               </Typography>
               {Object.entries(skills).map(([category, names]) => (
                 <Card key={category}>
                   <CardContent sx={{ p: 2, "&:last-child": { pb: 2 } }}>
-                    <Typography variant="subtitle1" sx={{ fontWeight: 800, mb: 1.5, display: "flex", alignItems: "center", gap: 1 }}>
+                    <Typography
+                      variant="subtitle1"
+                      sx={{
+                        fontWeight: 800,
+                        mb: 1.5,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                      }}
+                    >
                       <CodeIcon color="primary" fontSize="small" />
                       {category}
                     </Typography>
@@ -318,7 +390,8 @@ export function MuiMobileApp({
                           sx={{
                             fontWeight: 600,
                             fontSize: "0.75rem",
-                            backgroundColor: mode === "dark" ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.04)",
+                            backgroundColor:
+                              mode === "dark" ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.04)",
                           }}
                         />
                       ))}
@@ -332,7 +405,17 @@ export function MuiMobileApp({
           {/* PROJECTS TAB */}
           {activeTab === 3 && (
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
-              <Typography variant="h6" sx={{ fontWeight: 800, mb: 0.5, textTransform: "uppercase", fontSize: "0.95rem", letterSpacing: "0.05em" }} color="primary">
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 800,
+                  mb: 0.5,
+                  textTransform: "uppercase",
+                  fontSize: "0.95rem",
+                  letterSpacing: "0.05em",
+                }}
+                color="primary"
+              >
                 Featured Projects
               </Typography>
               {projects.map((project, idx) => (
@@ -347,7 +430,11 @@ export function MuiMobileApp({
                     <Typography variant="subtitle1" sx={{ fontWeight: 800, mb: 1 }}>
                       {project.title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary" sx={{ mb: 2, lineHeight: 1.6 }}>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ mb: 2, lineHeight: 1.6 }}
+                    >
                       {project.description}
                     </Typography>
                     <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 2 }}>
@@ -381,10 +468,22 @@ export function MuiMobileApp({
           {/* MORE TAB (Publications, Education, Contact) */}
           {activeTab === 4 && (
             <Box sx={{ display: "flex", flexDirection: "column", gap: 3.5 }}>
-              
               {/* Publications Section */}
               <Box>
-                <Typography variant="h6" sx={{ fontWeight: 800, mb: 1.5, textTransform: "uppercase", fontSize: "0.95rem", letterSpacing: "0.05em", display: "flex", alignItems: "center", gap: 1 }} color="primary">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 800,
+                    mb: 1.5,
+                    textTransform: "uppercase",
+                    fontSize: "0.95rem",
+                    letterSpacing: "0.05em",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 1,
+                  }}
+                  color="primary"
+                >
                   <BookIcon fontSize="small" />
                   Publications
                 </Typography>
@@ -400,10 +499,17 @@ export function MuiMobileApp({
                             {blog.readingTime}
                           </Typography>
                         </Box>
-                        <Typography variant="subtitle1" sx={{ fontWeight: 800, mb: 1, lineHeight: 1.4 }}>
+                        <Typography
+                          variant="subtitle1"
+                          sx={{ fontWeight: 800, mb: 1, lineHeight: 1.4 }}
+                        >
                           {blog.title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary" sx={{ mb: 2, lineHeight: 1.6 }}>
+                        <Typography
+                          variant="body2"
+                          color="text.secondary"
+                          sx={{ mb: 2, lineHeight: 1.6 }}
+                        >
                           {blog.summary}
                         </Typography>
                         <Button
@@ -423,7 +529,20 @@ export function MuiMobileApp({
 
               {/* Education Section */}
               <Box>
-                <Typography variant="h6" sx={{ fontWeight: 800, mb: 1.5, textTransform: "uppercase", fontSize: "0.95rem", letterSpacing: "0.05em", display: "flex", alignItems: "center", gap: 1 }} color="primary">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 800,
+                    mb: 1.5,
+                    textTransform: "uppercase",
+                    fontSize: "0.95rem",
+                    letterSpacing: "0.05em",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 1,
+                  }}
+                  color="primary"
+                >
                   <SchoolIcon fontSize="small" />
                   Education
                 </Typography>
@@ -431,16 +550,21 @@ export function MuiMobileApp({
                   {education.map((edu, idx) => (
                     <Card key={idx}>
                       <CardContent sx={{ p: 2, display: "flex", gap: 1.5 }}>
-                        <Box sx={{
-                          backgroundColor: mode === "dark" ? "rgba(56, 189, 248, 0.08)" : "rgba(2, 132, 199, 0.06)",
-                          borderRadius: "50%",
-                          width: 44,
-                          height: 44,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexShrink: 0,
-                        }}>
+                        <Box
+                          sx={{
+                            backgroundColor:
+                              mode === "dark"
+                                ? "rgba(56, 189, 248, 0.08)"
+                                : "rgba(2, 132, 199, 0.06)",
+                            borderRadius: "50%",
+                            width: 44,
+                            height: 44,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexShrink: 0,
+                          }}
+                        >
                           <SchoolIcon color="primary" />
                         </Box>
                         <Box>
@@ -481,8 +605,15 @@ export function MuiMobileApp({
                 </Typography>
                 <Card>
                   <CardContent sx={{ p: 2 }}>
-                    <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.7, mb: 2 }}>
-                      This site uses privacy-friendly, cookie-less analytics (Vercel Analytics) and does not collect, sell, or share any personal data. Direct communications via email are used solely to respond to professional inquiries. Compliant with GDPR, DPDPA 2023, and CCPA.
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ lineHeight: 1.7, mb: 2 }}
+                    >
+                      This site uses privacy-friendly, cookie-less analytics (Vercel Analytics) and
+                      does not collect, sell, or share any personal data. Direct communications via
+                      email are used solely to respond to professional inquiries. Compliant with
+                      GDPR, DPDPA 2023, and CCPA.
                     </Typography>
                     <Button
                       variant="outlined"
@@ -521,17 +652,12 @@ export function MuiMobileApp({
                   </IconButton>
                 </Box>
               </Box>
-
             </Box>
           )}
-
         </Container>
 
         {/* Persistent Bottom Tab Navigation */}
-        <Paper
-          sx={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 1000 }}
-          elevation={4}
-        >
+        <Paper sx={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 1000 }} elevation={4}>
           <BottomNavigation
             showLabels
             value={activeTab}
@@ -540,8 +666,12 @@ export function MuiMobileApp({
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             sx={{
-              borderTop: mode === "dark" ? "1px solid rgba(255, 255, 255, 0.08)" : "1px solid rgba(0, 0, 0, 0.05)",
-              backgroundColor: mode === "dark" ? "rgba(24, 24, 27, 0.95)" : "rgba(255, 255, 255, 0.95)",
+              borderTop:
+                mode === "dark"
+                  ? "1px solid rgba(255, 255, 255, 0.08)"
+                  : "1px solid rgba(0, 0, 0, 0.05)",
+              backgroundColor:
+                mode === "dark" ? "rgba(24, 24, 27, 0.95)" : "rgba(255, 255, 255, 0.95)",
               backdropFilter: "blur(10px)",
             }}
           >
@@ -552,7 +682,6 @@ export function MuiMobileApp({
             <BottomNavigationAction label="More" icon={<MoreHorizIcon />} />
           </BottomNavigation>
         </Paper>
-
       </Box>
     </ThemeProvider>
   );

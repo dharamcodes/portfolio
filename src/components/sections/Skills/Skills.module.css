@@ -68,7 +68,6 @@
   padding-right: 0.5rem;
 }
 
-
 .skill-badge-card {
   display: inline-flex;
   align-items: center;
@@ -147,41 +146,39 @@
   flex-shrink: 0;
 }
 
-
-
 @media (max-width: 768px) {
-    /* ── TECHNICAL ARSENAL — mobile overrides ── */
-    .skills-filter-bar {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      padding-bottom: 0.5rem;
-      scrollbar-width: none;
-      margin-bottom: 1.25rem;
-      mask-image: linear-gradient(to right, black 85%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-      justify-content: flex-start;
-    }
-    .skills-filter-bar::-webkit-scrollbar {
-      display: none;
-    }
-    .skills-filter-btn {
-      flex: none;
-      font-size: 0.78rem;
-      padding: 0.4rem 0.9rem;
-    }
-    .skills-unified-grid {
-      max-height: none;
-      overflow-y: visible;
-      padding-right: 0;
-      gap: 0.5rem;
-      justify-content: flex-start;
-    }
-    .skill-badge-card {
-      padding: 0.45rem 0.85rem;
-      font-size: 0.8rem;
-    }
-    .skill-badge-card-dimmed {
-      display: none;
-      /* Completely hide other categories' tags on mobile to save vertical height */
-    }
+  /* ── TECHNICAL ARSENAL — mobile overrides ── */
+  .skills-filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+    margin-bottom: 1.25rem;
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    justify-content: flex-start;
+  }
+  .skills-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+  .skills-filter-btn {
+    flex: none;
+    font-size: 0.78rem;
+    padding: 0.4rem 0.9rem;
+  }
+  .skills-unified-grid {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  .skill-badge-card {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.8rem;
+  }
+  .skill-badge-card-dimmed {
+    display: none;
+    /* Completely hide other categories' tags on mobile to save vertical height */
+  }
 }

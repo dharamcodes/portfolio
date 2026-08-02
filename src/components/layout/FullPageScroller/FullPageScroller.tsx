@@ -6,7 +6,15 @@ import Link from "next/link";
 import styles from "./FullPageScroller.module.css";
 
 const SECTION_IDS = ["about", "experience", "skills", "projects", "blogs", "education", "contact"];
-const SECTION_LABELS = ["Home", "Experience", "Skills", "Projects", "Blogs", "Education", "Contact"];
+const SECTION_LABELS = [
+  "Home",
+  "Experience",
+  "Skills",
+  "Projects",
+  "Blogs",
+  "Education",
+  "Contact",
+];
 
 interface FullPageScrollerProps {
   name: string;
@@ -73,11 +81,15 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
         const isScrollingDown = e.deltaY > 0;
         const isScrollingUp = e.deltaY < 0;
         if (scrollable.scrollHeight > scrollable.clientHeight) {
-          if (isScrollingDown && scrollable.scrollHeight - scrollable.scrollTop > scrollable.clientHeight + 10) return;
+          if (
+            isScrollingDown &&
+            scrollable.scrollHeight - scrollable.scrollTop > scrollable.clientHeight + 10
+          )
+            return;
           if (isScrollingUp && scrollable.scrollTop > 10) return;
         }
       }
-      
+
       e.preventDefault();
 
       const delta = e.deltaY;
@@ -122,7 +134,11 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
         if (scrollable) {
           if (scrollable.scrollHeight > scrollable.clientHeight) {
             // Allow vertical scroll inside scrollable list card
-            if (diffY > 0 && scrollable.scrollHeight - scrollable.scrollTop > scrollable.clientHeight + 10) return;
+            if (
+              diffY > 0 &&
+              scrollable.scrollHeight - scrollable.scrollTop > scrollable.clientHeight + 10
+            )
+              return;
             if (diffY < 0 && scrollable.scrollTop > 10) return;
           }
         }
@@ -140,17 +156,17 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
 
   const getSlideClass = (index: number) => {
     if (index === activeIndex) return styles.slideActive;
-    
+
     let diff = index - activeIndex;
     const len = SECTION_IDS.length;
     const half = len / 2;
-    
+
     if (diff > half) {
       diff -= len;
     } else if (diff < -half) {
       diff += len;
     }
-    
+
     return diff < 0 ? styles.slideLeft : styles.slideRight;
   };
 
@@ -158,11 +174,7 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
     <>
       <div className="bg-blob" />
       <div className="bg-blob-2" />
-      <Header
-        name={name}
-        activeSectionId={SECTION_IDS[activeIndex]}
-        onNavClick={navigate}
-      />
+      <Header name={name} activeSectionId={SECTION_IDS[activeIndex]} onNavClick={navigate} />
 
       <nav className={styles.slideDots} aria-label="Page navigation">
         {SECTION_IDS.map((id, i) => (
@@ -198,7 +210,10 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
         {React.Children.map(children, (child, index) => {
           const extraClass = index === 0 ? styles.hero : "";
           return (
-            <section id={SECTION_IDS[index]} className={`${styles.fullpageSlide} fullpage-slide ${getSlideClass(index)} ${index === activeIndex ? "slide-active" : ""} ${extraClass}`}>
+            <section
+              id={SECTION_IDS[index]}
+              className={`${styles.fullpageSlide} fullpage-slide ${getSlideClass(index)} ${index === activeIndex ? "slide-active" : ""} ${extraClass}`}
+            >
               {child}
             </section>
           );

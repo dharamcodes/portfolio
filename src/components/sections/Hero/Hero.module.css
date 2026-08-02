@@ -86,7 +86,7 @@
 }
 
 .hero-badge::before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -112,7 +112,8 @@
 }
 
 @keyframes heroBadgeBlink {
-  0%, 100% {
+  0%,
+  100% {
     border-color: rgba(249, 115, 22, 0.3);
     box-shadow: 0 0 8px rgba(249, 115, 22, 0.1);
   }
