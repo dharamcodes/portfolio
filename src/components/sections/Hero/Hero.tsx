@@ -10,6 +10,16 @@ interface HeroProps {
   };
 }
 
+const renderBoldText = (text: string) => {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+};
+
 export function Hero({ personal }: HeroProps) {
   return (
     <div
@@ -25,7 +35,7 @@ export function Hero({ personal }: HeroProps) {
         <p className={styles["hero-role"]}>
           Lead Engineer · Backend Systems · Distributed Architecture
         </p>
-        <p>{personal.summary}</p>
+        <p>{renderBoldText(personal.summary)}</p>
         <div className={styles["hero-cta-row"]} suppressHydrationWarning>
           <a href="#experience" className="btn btn-primary">
             View Experience
