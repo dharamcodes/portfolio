@@ -15,7 +15,7 @@ Dharmendra Awasthi is a Lead Engineer and Senior Software Engineer specializing 
 ---
 
 ## Executive Summary
-Senior Software Engineer with **nearly 10 years of experience** designing and building scalable, high-performance distributed systems and cloud-native microservices across telecom, retail, fintech, and gaming domains. Expertise in Java, Spring Boot, Kafka, AWS, and event-driven architectures. Proven track record of delivering highly available platforms processing over **1,500 TPS** and serving **10M+ users**. Experienced in leading end-to-end system design (HLD/LLD), driving technical architecture, and **leading and mentoring a team of four software engineers** to successfully deliver complex, high-impact projects from conception to production. Currently pursuing a part-time PhD in Computer Science & Artificial Intelligence at NIT Nagpur.
+Senior Software Engineer & Tech Lead with **10 years of experience** architecting distributed systems and cloud-native microservices across Fintech, Gaming, Telecom, and Retail. Proven track record of **leading engineering teams (4+)** and delivering event-driven platforms (Java, Spring Boot, Kafka, AWS) scaling to **1,500+ TPS** and **10M+ users**. Currently pursuing a part-time PhD in Computer Science & Artificial Intelligence at NIT Nagpur.
 
 ---
 
