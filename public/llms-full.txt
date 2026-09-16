@@ -156,7 +156,6 @@ Tech Lead with **10 years of experience** architecting distributed systems and c
 ---
 
 ## Education & Certifications
-- **Doctor of Philosophy (PhD), Part-Time, Computer Science & Artificial Intelligence**
   *National Institute of Technology (NIT) Nagpur* | *2025 – Present*
 - **Advanced General Management Program (AGMP), General Management**
   *Institute of Management Technology (IMT), Ghaziabad* | *2022 – 2024*
