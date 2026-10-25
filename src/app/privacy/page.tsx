@@ -59,11 +59,11 @@ export default function PrivacyPolicy() {
             your privacy and am committed to protecting your personal data. This privacy policy
             explains how data is handled when you visit my website (
             <a
-              href="https://dharam.dev"
+              href="https://dharam.codes"
               className="gradient-text"
               style={{ fontWeight: 600, textDecoration: "none" }}
             >
-              dharam.dev
+              dharam.codes
             </a>
             ).
           </p>

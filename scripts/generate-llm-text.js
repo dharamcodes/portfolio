@@ -30,8 +30,8 @@ Object.entries(resume.skills).forEach(([category, skills]) => {
 
 llmsText += `
 ## Navigation & Contact
-- **Website**: [https://dharam.dev](https://dharam.dev)
-- **Full Markdown CV**: [https://dharam.dev/llms-full.txt](https://dharam.dev/llms-full.txt)
+- **Website**: [https://dharam.codes](https://dharam.codes)
+- **Full Markdown CV**: [https://dharam.codes/llms-full.txt](https://dharam.codes/llms-full.txt)
 - **LinkedIn**: [${resume.contact.linkedin}](${resume.contact.linkedin})
 - **GitHub**: [${resume.contact.github}](${resume.contact.github})
 - **Email**: [${resume.contact.email}](mailto:${resume.contact.email})
@@ -55,7 +55,7 @@ ${resume.personal.name} is a Lead Engineer and Senior Software Engineer speciali
 - **Location**: ${resume.contact.location}
 - **GitHub**: [${resume.contact.github}](${resume.contact.github})
 - **LinkedIn**: [${resume.contact.linkedin}](${resume.contact.linkedin})
-- **Website**: [https://dharam.dev](https://dharam.dev)
+- **Website**: [https://dharam.codes](https://dharam.codes)
 
 ---
 

@@ -10,7 +10,7 @@ Dharmendra Awasthi is a Lead Engineer and Senior Software Engineer specializing 
 - **Location**: Bengaluru, Karnataka, India
 - **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
 - **LinkedIn**: [https://www.linkedin.com/in/dharamcodes](https://www.linkedin.com/in/dharamcodes)
-- **Website**: [https://dharam.dev](https://dharam.dev)
+- **Website**: [https://dharam.codes](https://dharam.codes)
 
 ---
 
@@ -156,7 +156,6 @@ Tech Lead with **10 years of experience** architecting distributed systems and c
 ---
 
 ## Education & Certifications
-  *National Institute of Technology (NIT) Nagpur* | *2025 – Present*
 - **Advanced General Management Program (AGMP), General Management**
   *Institute of Management Technology (IMT), Ghaziabad* | *2022 – 2024*
 - **Postgraduate Diploma in Advanced Computing (PG-DAC), Computer Engineering**

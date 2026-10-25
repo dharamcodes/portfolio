@@ -43,7 +43,7 @@ export function Header({ name, activeSectionId, onNavClick }: HeaderProps) {
           style={{ cursor: "pointer" }}
           aria-label={`${name} portfolio homepage`}
         >
-          dharam<span className="gradient-text">.dev</span>
+          dharam<span className="gradient-text">.codes</span>
         </div>
 
         {/* Desktop Navigation */}

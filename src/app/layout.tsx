@@ -9,7 +9,7 @@ import resumeData from "@/data/resume.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://dharam.dev";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://dharam.codes";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

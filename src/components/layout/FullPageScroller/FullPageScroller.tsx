@@ -196,7 +196,7 @@ export function FullPageScroller({ name, children }: FullPageScrollerProps) {
       <main className={styles.fullpageContainer} itemScope itemType="https://schema.org/Person">
         <meta itemProp="name" content={name} />
         <meta itemProp="jobTitle" content="Lead Engineer / Senior Software Engineer" />
-        <meta itemProp="url" content="https://dharam.dev" />
+        <meta itemProp="url" content="https://dharam.codes" />
         <span
           itemProp="address"
           itemScope

@@ -15,4 +15,4 @@ Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
 
-Sitemap: https://dharam.dev/sitemap.xml
+Sitemap: https://dharam.codes/sitemap.xml

@@ -24,8 +24,8 @@ Tech Lead with **10 years of experience** architecting distributed systems and c
 - **Engineering Practices**: System Design (HLD/LLD), Performance Tuning, Capacity Planning, CI/CD, Agile/Scrum, TDD
 
 ## Navigation & Contact
-- **Website**: [https://dharam.dev](https://dharam.dev)
-- **Full Markdown CV**: [https://dharam.dev/llms-full.txt](https://dharam.dev/llms-full.txt)
+- **Website**: [https://dharam.codes](https://dharam.codes)
+- **Full Markdown CV**: [https://dharam.codes/llms-full.txt](https://dharam.codes/llms-full.txt)
 - **LinkedIn**: [https://www.linkedin.com/in/dharamcodes](https://www.linkedin.com/in/dharamcodes)
 - **GitHub**: [https://github.com/dharamcodes](https://github.com/dharamcodes)
 - **Email**: [er.dharamk@gmail.com](mailto:er.dharamk@gmail.com)

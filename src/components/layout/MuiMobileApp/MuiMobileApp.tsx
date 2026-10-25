@@ -214,7 +214,7 @@ export function MuiMobileApp({
         >
           <Toolbar sx={{ justifyContent: "space-between" }}>
             <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: "-0.03em" }}>
-              DHARMENDRA <span style={{ color: muiTheme.palette.primary.main }}>K.</span>
+              dharam<span style={{ color: muiTheme.palette.primary.main }}>.codes</span>
             </Typography>
             <IconButton onClick={toggleTheme} color="inherit">
               {mode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
